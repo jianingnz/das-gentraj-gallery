@@ -1,12 +1,13 @@
 {
   "n_total_tasks": 490,
-  "n_with_triptych": 451,
+  "n_with_triptych": 456,
   "per_dataset_counts": {
     "egodex": 100,
     "hdepic": 100,
     "stereo4d": 61,
     "yt-vis": 100,
-    "davis": 90
+    "davis": 90,
+    "experiment": 5
   },
   "items": [
     {
@@ -3616,6 +3617,51 @@
       "tracks_type": "object",
       "adapter": "dict",
       "triptych": "videos/davis/scooter-black.mp4"
+    },
+    {
+      "dataset": "experiment",
+      "vid": "prompt_noobj_part2",
+      "prompt": "put orange toy in blue bowl. no new objects should be added",
+      "tracks_type": "object",
+      "adapter": "egodex/dict",
+      "triptych": "videos/experiment/prompt_noobj_part2.mp4",
+      "experiment_note": "prompt +\u201cno new objects\u201d"
+    },
+    {
+      "dataset": "experiment",
+      "vid": "prompt_noobj_part5",
+      "prompt": "put white bottle into container. no new objects should be added",
+      "tracks_type": "object+hands",
+      "adapter": "egodex/dict",
+      "triptych": "videos/experiment/prompt_noobj_part5.mp4",
+      "experiment_note": "prompt +\u201cno new objects\u201d"
+    },
+    {
+      "dataset": "experiment",
+      "vid": "world_p2_soapbox",
+      "prompt": "two drivers drive a self-made cart through a bump",
+      "tracks_type": "object (world-space, P2)",
+      "adapter": "world",
+      "triptych": "videos/experiment/world_p2_soapbox.mp4",
+      "experiment_note": "P2 frozen-view (world-space tracks)"
+    },
+    {
+      "dataset": "experiment",
+      "vid": "world_p2_snowboard",
+      "prompt": "a snowboarder does a flip",
+      "tracks_type": "object (world-space, P2)",
+      "adapter": "world",
+      "triptych": "videos/experiment/world_p2_snowboard.mp4",
+      "experiment_note": "P2 frozen-view (world-space tracks)"
+    },
+    {
+      "dataset": "experiment",
+      "vid": "world_p2_blackswan",
+      "prompt": "a black swan swims to the right",
+      "tracks_type": "object (world-space, P2)",
+      "adapter": "world",
+      "triptych": "videos/experiment/world_p2_blackswan.mp4",
+      "experiment_note": "P2 frozen-view (world-space tracks)"
     }
   ]
 }

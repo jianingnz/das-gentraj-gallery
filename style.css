@@ -125,11 +125,12 @@ h1 {
   background: rgba(224, 184, 107, 0.08);
 }
 /* dataset-specific pill accents — subtle */
-.tag-btn.egodex.active   { border-color: #6ac47a; background: rgba(106, 196, 122, 0.10); }
-.tag-btn.hdepic.active   { border-color: #b888d9; background: rgba(184, 136, 217, 0.10); }
-.tag-btn.stereo4d.active { border-color: #e0915a; background: rgba(224, 145, 90, 0.10); }
-.tag-btn.ytvis.active    { border-color: #6fb3d3; background: rgba(111, 179, 211, 0.10); }
-.tag-btn.davis.active    { border-color: #d37f99; background: rgba(211, 127, 153, 0.10); }
+.tag-btn.egodex.active     { border-color: #6ac47a; background: rgba(106, 196, 122, 0.10); }
+.tag-btn.hdepic.active     { border-color: #b888d9; background: rgba(184, 136, 217, 0.10); }
+.tag-btn.stereo4d.active   { border-color: #e0915a; background: rgba(224, 145, 90, 0.10); }
+.tag-btn.ytvis.active      { border-color: #6fb3d3; background: rgba(111, 179, 211, 0.10); }
+.tag-btn.davis.active      { border-color: #d37f99; background: rgba(211, 127, 153, 0.10); }
+.tag-btn.experiment.active { border-color: #e8d66a; background: rgba(232, 214, 106, 0.12); }
 
 #search {
   width: 100%;
@@ -188,6 +189,17 @@ h1 {
 .card-header .ds.stereo4d { color: #f0b088; border-color: rgba(224, 145, 90, 0.35); background: rgba(224, 145, 90, 0.08); }
 .card-header .ds.ytvis    { color: #9cc8dd; border-color: rgba(111, 179, 211, 0.35); background: rgba(111, 179, 211, 0.08); }
 .card-header .ds.davis    { color: #e2a7b9; border-color: rgba(211, 127, 153, 0.35); background: rgba(211, 127, 153, 0.08); }
+.card-header .ds.experiment { color: #f4e4a0; border-color: rgba(232, 214, 106, 0.40); background: rgba(232, 214, 106, 0.10); }
+
+/* Experiment-card variant — a pill noting what's different about this run */
+.card-header .exp-note {
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+  letter-spacing: 0.05em;
+  border: 1px dashed var(--border-strong);
+  padding: 0.1rem 0.5rem;
+  border-radius: 3px;
+}
 
 .card-header .vid {
   font-family: ui-monospace, 'SF Mono', monospace;

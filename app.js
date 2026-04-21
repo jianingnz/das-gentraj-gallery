@@ -1,9 +1,9 @@
 /* Lightweight client — loads manifest.json, renders cards, handles
    dataset-tag + prompt-substring filtering, dark/light toggle. */
 
-const DS_KEYS = ["egodex", "hdepic", "stereo4d", "yt-vis", "davis"];
+const DS_KEYS = ["egodex", "hdepic", "stereo4d", "yt-vis", "davis", "experiment"];
 const DS_CSS = { "yt-vis": "ytvis" }; // CSS class-name safe
-const DS_LABEL = { egodex: "egodex", hdepic: "hd-epic", stereo4d: "stereo4d", "yt-vis": "yt-vis", davis: "davis" };
+const DS_LABEL = { egodex: "egodex", hdepic: "hd-epic", stereo4d: "stereo4d", "yt-vis": "yt-vis", davis: "davis", experiment: "experiment" };
 
 let MANIFEST = null;
 let STATE = { dataset: "all", query: "" };
@@ -75,12 +75,15 @@ function render() {
     const promptHtml = e.prompt
       ? `<div class="card-prompt">“${escapeHTML(e.prompt)}”</div>`
       : `<div class="card-prompt empty">(empty prompt — text conditioning disabled)</div>`;
+    const expNote = e.experiment_note
+      ? `<span class="exp-note">${escapeHTML(e.experiment_note)}</span>` : "";
     return `
       <article class="card">
         <div class="card-header">
           <span class="ds ${dsCssClass}">${DS_LABEL[e.dataset]}</span>
           <span class="vid">${escapeHTML(e.vid)}</span>
           <span class="tracks-type">${e.tracks_type}</span>
+          ${expNote}
         </div>
         ${promptHtml}
         <div class="card-video">

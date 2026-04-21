@@ -1,0 +1,3621 @@
+{
+  "n_total_tasks": 490,
+  "n_with_triptych": 451,
+  "per_dataset_counts": {
+    "egodex": 100,
+    "hdepic": 100,
+    "stereo4d": 61,
+    "yt-vis": 100,
+    "davis": 90
+  },
+  "items": [
+    {
+      "dataset": "egodex",
+      "vid": "part5_vertical_pick_place_6144",
+      "prompt": "put white bottle into container",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part5_vertical_pick_place_6144.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part5_stack_814",
+      "prompt": "put candy wrapper into box",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part5_stack_814.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part4_scoop_dump_ice_1211",
+      "prompt": "scoop water with purple shovel from gray container",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part4_scoop_dump_ice_1211.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part3_open_close_insert_remove_case_1166",
+      "prompt": "take out toy from box",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part3_open_close_insert_remove_case_1166.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part2_assemble_disassemble_furniture_bench_chair_5810",
+      "prompt": "place white plastic bottle on white plastic object",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part2_assemble_disassemble_furniture_bench_chair_5810.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part3_insert_remove_cups_from_rack_841",
+      "prompt": "pick up red yellow and blue plastic cups from drying rack",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part3_insert_remove_cups_from_rack_841.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part4_pour_456",
+      "prompt": "shake clear plastic water bottle",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part4_pour_456.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part1_clean_cups_431",
+      "prompt": "use yellow cup to pour water into green cup",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part1_clean_cups_431.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part4_pick_place_food_1570",
+      "prompt": "pick up yellow bread from basket",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part4_pick_place_food_1570.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part5_vertical_pick_place_7004",
+      "prompt": "put pill bottle cap into container",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part5_vertical_pick_place_7004.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part2_basic_pick_place_19096",
+      "prompt": "pick up gray toy with hand",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part2_basic_pick_place_19096.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part3_insert_remove_cups_from_rack_95",
+      "prompt": "put cups in drying rack",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part3_insert_remove_cups_from_rack_95.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part3_open_close_insert_remove_case_1060",
+      "prompt": "put white circular object into black box",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part3_open_close_insert_remove_case_1060.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part1_clean_surface_4114",
+      "prompt": "roll orange fabric with lint roller",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part1_clean_surface_4114.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part2_assemble_disassemble_furniture_bench_stool_7015",
+      "prompt": "remove white plastic cap from white plastic bottle",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part2_assemble_disassemble_furniture_bench_stool_7015.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part5_stack_3958",
+      "prompt": "put yellow rubber duck into box",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part5_stack_3958.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part2_basic_fold_1140",
+      "prompt": "fold white t-shirt on bed",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part2_basic_fold_1140.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part3_open_close_insert_remove_case_2052",
+      "prompt": "take out toy duck from box",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part3_open_close_insert_remove_case_2052.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part2_basic_pick_place_24427",
+      "prompt": "pick up red Lego piece",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part2_basic_pick_place_24427.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part4_scoop_dump_ice_4394",
+      "prompt": "pour ice cubes from yellow cup into gray container",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part4_scoop_dump_ice_4394.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part3_open_close_insert_remove_case_1016",
+      "prompt": "take out toy from box",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part3_open_close_insert_remove_case_1016.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part5_stack_unstack_bowls_2440",
+      "prompt": "take out orange bowl from inside of bowls",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part5_stack_unstack_bowls_2440.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "extra_insert_remove_usb_308",
+      "prompt": "comb blonde hair of doll with pink comb",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/extra_insert_remove_usb_308.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part4_pour_458",
+      "prompt": "pour brown liquid from bottle into cup",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part4_pour_458.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part3_gather_roll_dice_386",
+      "prompt": "roll dice",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part3_gather_roll_dice_386.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part4_pick_place_food_4742",
+      "prompt": "put green grapes into basket",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part4_pick_place_food_4742.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part5_stack_994",
+      "prompt": "put rubber duck into box",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part5_stack_994.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "extra_makeup_448",
+      "prompt": "apply lipstick to the doll's lips",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/extra_makeup_448.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part2_basic_pick_place_1627",
+      "prompt": "pick up blue plastic dice",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part2_basic_pick_place_1627.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part5_stack_unstack_plates_4398",
+      "prompt": "stack yellow and red plates",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part5_stack_unstack_plates_4398.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part5_vertical_pick_place_8915",
+      "prompt": "put white sticker in clear plastic container",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part5_vertical_pick_place_8915.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part1_clean_cups_1862",
+      "prompt": "insert green cup into blue cup",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part1_clean_cups_1862.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part1_add_remove_lid_2151",
+      "prompt": "put white lid on white cup",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part1_add_remove_lid_2151.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part2_assemble_disassemble_furniture_bench_chair_1679",
+      "prompt": "insert white plastic piece into white plastic structure",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part2_assemble_disassemble_furniture_bench_chair_1679.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part5_stack_4963",
+      "prompt": "put rubber duck into box",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part5_stack_4963.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part1_clean_cups_122",
+      "prompt": "wash red plastic cup with blue sponge",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part1_clean_cups_122.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part1_assemble_disassemble_legos_1013",
+      "prompt": "deconstruct multicolor lego",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part1_assemble_disassemble_legos_1013.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part1_clean_cups_1100",
+      "prompt": "use yellow plastic bottle to pour liquid into red cup",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part1_clean_cups_1100.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part2_insert_remove_furniture_bench_round_table_2620",
+      "prompt": "remove white plastic piece from white plastic lid",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part2_insert_remove_furniture_bench_round_table_2620.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part4_play_mancala_1812",
+      "prompt": "remove marbles from yellow board",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part4_play_mancala_1812.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part5_vertical_pick_place_7129",
+      "prompt": "put pink rubber duck into container",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part5_vertical_pick_place_7129.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "extra_insert_remove_usb_661",
+      "prompt": "comb pink hairbrush through blonde hair",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/extra_insert_remove_usb_661.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part4_scoop_dump_ice_5400",
+      "prompt": "pick up purple scoop",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part4_scoop_dump_ice_5400.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part5_vertical_pick_place_13931",
+      "prompt": "put down white cupcake with yellow and red frosting into clear plastic container",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part5_vertical_pick_place_13931.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part4_pour_435",
+      "prompt": "pour water from bottle into cup",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part4_pour_435.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part4_pour_2711",
+      "prompt": "pour juice from brown glass bottle into gray cup",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part4_pour_2711.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part3_pick_up_and_put_down_case_or_bag_960",
+      "prompt": "lift black briefcase",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part3_pick_up_and_put_down_case_or_bag_960.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part4_scoop_dump_ice_728",
+      "prompt": "pour liquid from yellow cup into container",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part4_scoop_dump_ice_728.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part2_basic_fold_1244",
+      "prompt": "fold white t-shirt on table",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part2_basic_fold_1244.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part3_insert_remove_bookshelf_1339",
+      "prompt": "take out book from box",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part3_insert_remove_bookshelf_1339.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part2_basic_pick_place_26224",
+      "prompt": "put yellow plastic toy block into white dustpan",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part2_basic_pick_place_26224.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part1_clean_tableware_1417",
+      "prompt": "clean yellow plastic spoon with blue sponge",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part1_clean_tableware_1417.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part1_charge_uncharge_airpods_1234",
+      "prompt": "put white earphone case on table",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part1_charge_uncharge_airpods_1234.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part3_insert_remove_utensils_3019",
+      "prompt": "put plastic cutlery into dish drainer",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part3_insert_remove_utensils_3019.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part3_pick_up_and_put_down_case_or_bag_121",
+      "prompt": "lift black briefcase",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part3_pick_up_and_put_down_case_or_bag_121.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part3_paint_clean_brush_585",
+      "prompt": "dip paintbrush into water",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part3_paint_clean_brush_585.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part3_open_close_insert_remove_tupperware_1872",
+      "prompt": "remove yellow sponge from container",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part3_open_close_insert_remove_tupperware_1872.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part4_play_mancala_1454",
+      "prompt": "pick up yellow marbles from yellow board",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part4_play_mancala_1454.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part2_basic_pick_place_4260",
+      "prompt": "pick up yellow circular object from white bowl",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part2_basic_pick_place_4260.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part4_pick_place_food_2806",
+      "prompt": "put red apple in basket",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part4_pick_place_food_2806.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part1_fidget_magnetic_spinner_rings_235",
+      "prompt": "spin fidget spinner with right hand",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part1_fidget_magnetic_spinner_rings_235.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part4_play_mancala_35",
+      "prompt": "arrange marbles in yellow tray",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part4_play_mancala_35.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part3_insert_remove_utensils_1504",
+      "prompt": "take plastic forks from dish drainer",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part3_insert_remove_utensils_1504.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "extra_stack_unstack_tetra_board_1039",
+      "prompt": "place green plastic puzzle piece on stand, place yellow plastic puzzle piece on stand, place blue plastic puzzle piece on stand, place yellow plastic puzzle piece on stand, place blue plastic puzzle piece on stand, place green plastic puzzle piece on stand, place green plastic puzzle piece on stand, place yellow plastic puzzle piece on stand, place green plastic puzzle piece on stand, place yellow plastic puzzle piece on stand, place green plastic puzzle piece on stand, place yellow plastic puzzle piece on stand, place green plastic puzzle piece on stand, place yellow plastic puzzle piece on stand, place green plastic puzzle piece on stand, place yellow plastic puzzle piece on stand",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/extra_stack_unstack_tetra_board_1039.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part5_vertical_pick_place_4582",
+      "prompt": "put plastic bag into container",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part5_vertical_pick_place_4582.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part5_vertical_pick_place_14727",
+      "prompt": "put vial in container",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part5_vertical_pick_place_14727.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part5_vertical_pick_place_9488",
+      "prompt": "put green toy in container",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part5_vertical_pick_place_9488.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part3_insert_remove_cups_from_rack_699",
+      "prompt": "put red yellow and blue cup in basket",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part3_insert_remove_cups_from_rack_699.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part1_clean_surface_1023",
+      "prompt": "iron orange t-shirt with lint roller",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part1_clean_surface_1023.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part1_dry_hands_1744",
+      "prompt": "wipe right hand with blue towel",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part1_dry_hands_1744.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part3_insert_remove_utensils_883",
+      "prompt": "take plastic cutlery from container",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part3_insert_remove_utensils_883.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part2_basic_pick_place_27181",
+      "prompt": "put green lego on yellow plate",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part2_basic_pick_place_27181.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part3_open_close_insert_remove_case_177",
+      "prompt": "put down white ceramic cup",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part3_open_close_insert_remove_case_177.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part1_clean_tableware_2572",
+      "prompt": "wash red plastic knife with blue sponge",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part1_clean_tableware_2572.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part2_basic_pick_place_1561",
+      "prompt": "put orange sphere on plate",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part2_basic_pick_place_1561.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part4_pick_place_food_2246",
+      "prompt": "put bread roll into basket",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part4_pick_place_food_2246.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part2_basic_pick_place_11091",
+      "prompt": "put white egg into yellow bowl",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part2_basic_pick_place_11091.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part2_basic_pick_place_20311",
+      "prompt": "put yellow dice into container",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part2_basic_pick_place_20311.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part2_assemble_disassemble_furniture_bench_chair_3676",
+      "prompt": "place white plastic piece on white plastic structure",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part2_assemble_disassemble_furniture_bench_chair_3676.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part4_scoop_dump_ice_4585",
+      "prompt": "use purple scoop to transfer ice from gray container to yellow cup",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part4_scoop_dump_ice_4585.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part5_stack_unstack_plates_6493",
+      "prompt": "move yellow plastic plate on table",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part5_stack_unstack_plates_6493.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part5_vertical_pick_place_4741",
+      "prompt": "put white ceramic keychain into container",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part5_vertical_pick_place_4741.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part2_basic_pick_place_10888",
+      "prompt": "pick up yellow bread, put it in green basket",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part2_basic_pick_place_10888.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part1_clean_tableware_494",
+      "prompt": "wash blue plastic plate with blue sponge",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part1_clean_tableware_494.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part3_insert_remove_utensils_3428",
+      "prompt": "remove plastic utensils from dish drainer",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part3_insert_remove_utensils_3428.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part5_stack_unstack_plates_218",
+      "prompt": "stack green plate on blue plate",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part5_stack_unstack_plates_218.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "extra_insert_remove_usb_253",
+      "prompt": "comb blonde hair with pink comb",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/extra_insert_remove_usb_253.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part4_play_mancala_286",
+      "prompt": "place marbles in tray",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part4_play_mancala_286.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part2_assemble_disassemble_furniture_bench_lamp_1621",
+      "prompt": "pick up white cup",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part2_assemble_disassemble_furniture_bench_lamp_1621.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part1_dry_hands_2278",
+      "prompt": "wipe right hand with green cloth",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part1_dry_hands_2278.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part1_clean_cups_1220",
+      "prompt": "wash yellow plastic cup with blue sponge",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part1_clean_cups_1220.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part3_insert_remove_utensils_2310",
+      "prompt": "pick up plastic cutlery",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part3_insert_remove_utensils_2310.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part2_basic_pick_place_6214",
+      "prompt": "put green Lego on white tray",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part2_basic_pick_place_6214.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part5_stack_remove_jenga_1921",
+      "prompt": "place wooden block on wooden block tower",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part5_stack_remove_jenga_1921.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part2_assemble_disassemble_furniture_bench_chair_3295",
+      "prompt": "insert white cap into white plastic object",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part2_assemble_disassemble_furniture_bench_chair_3295.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part3_insert_remove_utensils_3475",
+      "prompt": "take plastic cutlery from cup",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part3_insert_remove_utensils_3475.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part1_clean_surface_4128",
+      "prompt": "spray cleaning solution on cloth",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part1_clean_surface_4128.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part4_scoop_dump_ice_2788",
+      "prompt": "pick up purple scoop",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part4_scoop_dump_ice_2788.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part3_paint_clean_brush_724",
+      "prompt": "dip paintbrush into water",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part3_paint_clean_brush_724.mp4"
+    },
+    {
+      "dataset": "egodex",
+      "vid": "part5_stack_6781",
+      "prompt": "put red dice into brown box",
+      "tracks_type": "object+hands",
+      "adapter": "egodex",
+      "triptych": "videos/egodex/part5_stack_6781.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P05-20240425-201444-596",
+      "prompt": "remove ramekin from on top of the chocolate pudding with the towel in the right hand",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P05-20240425-201444-596.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P04-20240414-173337-178",
+      "prompt": "examine the spatula with both hands",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P04-20240414-173337-178.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P06-20240510-090328-113",
+      "prompt": "move the chopping board with the right hand",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P06-20240510-090328-113.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P02-20240209-184316-809",
+      "prompt": "lift up and shake the potatoes in the frying pan",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P02-20240209-184316-809.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P02-20240209-184316-710",
+      "prompt": "close the cupboard door with the left hand",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P02-20240209-184316-710.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P03-20240216-084005-147",
+      "prompt": "turn off the coffee grinder by pushing the button with my right thumb",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P03-20240216-084005-147.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P07-20240531-101357-378",
+      "prompt": "place the brush into the caddy",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P07-20240531-101357-378.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P05-20240425-173353-130",
+      "prompt": "pick up the pan of pasta from the right side of the counter.",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P05-20240425-173353-130.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P03-20240218-202148-120",
+      "prompt": "try to put the dirty bowl on the dishwasher top rack.",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P03-20240218-202148-120.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P02-20240211-141313-242",
+      "prompt": "place the Tupperware box back into the cupboard using the right hand.",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P02-20240211-141313-242.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P01-20240203-093333-14",
+      "prompt": "put down the water filter jug on the countertop",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P01-20240203-093333-14.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P01-20240203-123350-35",
+      "prompt": "continue mixing and kneading the dough",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P01-20240203-123350-35.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P04-20240414-162750-140",
+      "prompt": "shake the potato and hands over the kitchen sink",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P04-20240414-162750-140.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P04-20240413-142619-66",
+      "prompt": "pick up the bag of lemons from the refrigerator with the left hand",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P04-20240413-142619-66.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P03-20240216-084005-421",
+      "prompt": "hold the Nutella jar with the left hand. scoop Nutella with the knife in the right hand",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P03-20240216-084005-421.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P04-20240413-151722-86",
+      "prompt": "pick up another teaspoon full of yogurt with the right hand",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P04-20240413-151722-86.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P05-20240425-124420-8",
+      "prompt": "transfer the rice to the left hand",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P05-20240425-124420-8.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P02-20240209-194141-256",
+      "prompt": "clean the front portion of the toaster",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P02-20240209-194141-256.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P06-20240510-090328-145",
+      "prompt": "rotate the tomato towards the knife",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P06-20240510-090328-145.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P01-20240203-130505-73",
+      "prompt": "slice the third onion horizontally with the knife",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P01-20240203-130505-73.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P03-20240216-084005-154",
+      "prompt": "turn on the grinder by pushing the button on the top",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P03-20240216-084005-154.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P06-20240510-100047-251",
+      "prompt": "place the scissors in the cup with the left hand",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P06-20240510-100047-251.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P07-20240529-134410-260",
+      "prompt": "drop the peeled plastic packaging",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P07-20240529-134410-260.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P05-20240425-171455-59",
+      "prompt": "open the drawer with the left hand while holding the knife in the right hand",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P05-20240425-171455-59.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P02-20240211-120927-495",
+      "prompt": "shake off the sponge using the right hand",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P02-20240211-120927-495.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P04-20240413-142619-261",
+      "prompt": "transfer the knife from the left hand to the right hand",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P04-20240413-142619-261.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P04-20240413-151722-410",
+      "prompt": "pull the ends of the tortilla wrap with both hands",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P04-20240413-151722-410.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P01-20240203-135502-827",
+      "prompt": "stir the content of the pot with the spatula in the right hand",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P01-20240203-135502-827.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P05-20240425-083515-15",
+      "prompt": "drink from the pint glass with the right hand",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P05-20240425-083515-15.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P04-20240414-072251-239",
+      "prompt": "shake the pan over the kitchen sink with the left hand",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P04-20240414-072251-239.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P05-20240425-201444-157",
+      "prompt": "turn off scales with the right index finger",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P05-20240425-201444-157.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P01-20240202-195538-157",
+      "prompt": "place the bowl on the shelf of the dishwasher. slide it under a plastic container with the left hand",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P01-20240202-195538-157.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P05-20240425-173353-131",
+      "prompt": "pick up the bowl from the sink with the right hand.",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P05-20240425-173353-131.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P06-20240510-104642-978",
+      "prompt": "place another cup into the lower shelf with the right hand",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P06-20240510-104642-978.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P06-20240510-090328-610",
+      "prompt": "write on the blank page of the notebook with the pen in the right hand",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P06-20240510-090328-610.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P09-20240622-150155-1096",
+      "prompt": "pick up a second fork from the counter surface with my right hand",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P09-20240622-150155-1096.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P03-20240218-140054-224",
+      "prompt": "hang the orange cloth on the kitchen tap with the left hand",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P03-20240218-140054-224.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P03-20240218-202148-86",
+      "prompt": "scrub the dirty frying pan with the dishwasher brush in the right hand",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P03-20240218-202148-86.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P03-20240216-185832-990",
+      "prompt": "slide the rolling pin back on the shelf",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P03-20240216-185832-990.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P06-20240510-100047-45",
+      "prompt": "place back the cap of the milk carton with the left hand.",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P06-20240510-100047-45.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P01-20240204-121042-312",
+      "prompt": "hit the spatula against the rim of the pot",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P01-20240204-121042-312.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P04-20240414-181030-420",
+      "prompt": "scrub the spoon with the sponge in the right hand",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P04-20240414-181030-420.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P07-20240529-191007-454",
+      "prompt": "open the dishwasher with the right hand",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P07-20240529-191007-454.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P01-20240203-135502-750",
+      "prompt": "dip the teaspoon into the soup in the pot",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P01-20240203-135502-750.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P07-20240529-134410-245",
+      "prompt": "put the bowl down on the chopping board with both hands",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P07-20240529-134410-245.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P07-20240531-201703-564",
+      "prompt": "wipe wooden chopping board with cloth",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P07-20240531-201703-564.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P08-20240614-085000-237",
+      "prompt": "type on phone with the right hand",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P08-20240614-085000-237.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P01-20240203-135502-847",
+      "prompt": "put down the bowl on the countertop",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P01-20240203-135502-847.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P05-20240425-180658-41",
+      "prompt": "place oil on the top shelf of the cupboard with the right hand",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P05-20240425-180658-41.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P07-20240529-191007-545",
+      "prompt": "read the piece of paper using the finger",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P07-20240529-191007-545.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P04-20240413-151722-294",
+      "prompt": "put down the bowl containing chopped onion pieces on the countertop with the left hand",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P04-20240413-151722-294.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P04-20240413-142619-189",
+      "prompt": "unscrew the lid with the left hand",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P04-20240413-142619-189.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P04-20240414-162750-154",
+      "prompt": "place the potato on the plate on the scale with the right hand",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P04-20240414-162750-154.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P07-20240529-191007-461",
+      "prompt": "tip the chopped onions into the frying pan",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P07-20240529-191007-461.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P01-20240203-123350-312",
+      "prompt": "empty the content of the plastic package into the trash bin",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P01-20240203-123350-312.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P07-20240529-191007-393",
+      "prompt": "shake the foil wrapping to ensure it is empty",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P07-20240529-191007-393.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P04-20240413-142619-459",
+      "prompt": "place the onion on the plate of the weighing scale with the left hand",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P04-20240413-142619-459.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P04-20240413-142619-456",
+      "prompt": "press the buttons on the kitchen weighing scale with the right hand",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P04-20240413-142619-456.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P04-20240413-151722-84",
+      "prompt": "pick up a third spoonful of yogurt with the right hand",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P04-20240413-151722-84.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P04-20240414-065311-201",
+      "prompt": "continue chopping the mushroom into thin pieces with the knife",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P04-20240414-065311-201.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P01-20240204-121042-623",
+      "prompt": "create a well inside the biscuits with the right hand",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P01-20240204-121042-623.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P01-20240202-110250-47",
+      "prompt": "close the cupboard with the left hand",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P01-20240202-110250-47.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P04-20240414-065311-468",
+      "prompt": "pour the cinnamon powder in the spoon over the bowl",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P04-20240414-065311-468.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P06-20240510-104642-996",
+      "prompt": "press the sponge to create some foam",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P06-20240510-104642-996.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P02-20240211-141313-272",
+      "prompt": "pick up one of the raspberry and lemon curd tarts from the muffin tray",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P02-20240211-141313-272.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P03-20240218-140054-142",
+      "prompt": "get the bottle of soy sauce with the right hand",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P03-20240218-140054-142.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P08-20240614-085000-238",
+      "prompt": "pick up the salt and pepper shaker with both hands. move to the back of the kitchen counter",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P08-20240614-085000-238.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P05-20240424-171038-333",
+      "prompt": "chop tomatoes in half",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P05-20240424-171038-333.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P01-20240204-121042-475",
+      "prompt": "rinse the plate using the right hand",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P01-20240204-121042-475.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P02-20240211-120927-905",
+      "prompt": "scoop up the mixture with the tablespoon in the right hand",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P02-20240211-120927-905.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P09-20240622-150155-899",
+      "prompt": "push the chicken strip across the chop board with the fork in my right hand",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P09-20240622-150155-899.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P04-20240414-162750-408",
+      "prompt": "drag bits of leaf stuck to the knife plate with the left hand",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P04-20240414-162750-408.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P02-20240211-120927-190",
+      "prompt": "place the large mixing bowl on the saucepan with both hands",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P02-20240211-120927-190.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P04-20240414-072251-188",
+      "prompt": "wash the serving bowl under the running tap water with both hands",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P04-20240414-072251-188.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P05-20240425-171455-329",
+      "prompt": "turn over packet to find cooking instructions",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P05-20240425-171455-329.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P01-20240204-142301-511",
+      "prompt": "switch on the food processor by turning the dial clockwise with the left hand",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P01-20240204-142301-511.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P01-20240204-121042-31",
+      "prompt": "pick and crumple the empty plastic bag",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P01-20240204-121042-31.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P01-20240204-142301-334",
+      "prompt": "close the cupboard by pushing it back in",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P01-20240204-142301-334.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P03-20240216-084005-349",
+      "prompt": "place the slice of bread on the left slot of the toaster with my right hand",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P03-20240216-084005-349.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P01-20240203-184214-404",
+      "prompt": "lather the spoon with the right hand",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P01-20240203-184214-404.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P02-20240211-141313-563",
+      "prompt": "rotate the muffin tray with the left hand",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P02-20240211-141313-563.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P02-20240211-120927-1142",
+      "prompt": "slide the baguette into the packaging with both hands",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P02-20240211-120927-1142.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P01-20240203-150506-107",
+      "prompt": "lather the pan",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P01-20240203-150506-107.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P01-20240203-130505-159",
+      "prompt": "move the pan with meat from the first burner to the top right",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P01-20240203-130505-159.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P04-20240414-173337-221",
+      "prompt": "add the olive oil onto the pan with the spoon in the right hand",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P04-20240414-173337-221.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P02-20240211-111822-25",
+      "prompt": "wash the outside of the hand blender cup with the sponge",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P02-20240211-111822-25.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P05-20240427-143353-382",
+      "prompt": "place the phone back in pocket with the right hand",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P05-20240427-143353-382.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P01-20240203-135502-653",
+      "prompt": "add the meat topping to the last topped ball of dough",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P01-20240203-135502-653.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P07-20240531-101357-521",
+      "prompt": "wipe the kitchen island with the dishcloth",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P07-20240531-101357-521.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P05-20240424-175101-182",
+      "prompt": "pull out the cutlery drawer of the dishwasher with the left hand",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P05-20240424-175101-182.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P07-20240529-194518-457",
+      "prompt": "pull out the plastic packet of herbs from the first shelf",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P07-20240529-194518-457.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P02-20240209-184316-520",
+      "prompt": "hold the garlic clove in both hands and peel it",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P02-20240209-184316-520.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P02-20240210-122334-262",
+      "prompt": "tip out the rest of the water from the washing up bowl with both hands",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P02-20240210-122334-262.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P03-20240218-202148-236",
+      "prompt": "pull the cupboard under the sink to open it with my left hand",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P03-20240218-202148-236.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P09-20240622-150155-562",
+      "prompt": "transfer the potato bits from my left hand to my right hand",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P09-20240622-150155-562.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P04-20240414-162750-35",
+      "prompt": "spin the bottom part of the plastic bag with the right hand",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P04-20240414-162750-35.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P04-20240414-164751-49",
+      "prompt": "pull on the rubber band covering the bag with the right hand",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P04-20240414-164751-49.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P07-20240531-101357-79",
+      "prompt": "pull open the top drawer of the dishwasher. pick up the knife from the countertop. place it in the top drawer",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P07-20240531-101357-79.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P01-20240203-123350-426",
+      "prompt": "try to peel the carrot upside down",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P01-20240203-123350-426.mp4"
+    },
+    {
+      "dataset": "hdepic",
+      "vid": "P07-20240529-194518-244",
+      "prompt": "grate the cheese into the small bowl",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/hdepic/P07-20240529-194518-244.mp4"
+    },
+    {
+      "dataset": "stereo4d",
+      "vid": "PIveUGB2eF0_61795128",
+      "prompt": "water flows from the left to the right",
+      "tracks_type": "object",
+      "adapter": "stereo4d",
+      "triptych": "videos/stereo4d/PIveUGB2eF0_61795128.mp4"
+    },
+    {
+      "dataset": "stereo4d",
+      "vid": "HT5Wpq7yK8g_933867201",
+      "prompt": "a man in white clothes holds a stick with a pinata and raises it up",
+      "tracks_type": "object",
+      "adapter": "stereo4d",
+      "triptych": "videos/stereo4d/HT5Wpq7yK8g_933867201.mp4"
+    },
+    {
+      "dataset": "stereo4d",
+      "vid": "oAlYnTWBVHg_95161828",
+      "prompt": "three people walk to the right on a grassy field",
+      "tracks_type": "object",
+      "adapter": "stereo4d",
+      "triptych": "videos/stereo4d/oAlYnTWBVHg_95161828.mp4"
+    },
+    {
+      "dataset": "stereo4d",
+      "vid": "LvZyTVR8Bjg_364564565",
+      "prompt": "a boat sails to the left along the river",
+      "tracks_type": "object",
+      "adapter": "stereo4d",
+      "triptych": "videos/stereo4d/LvZyTVR8Bjg_364564565.mp4"
+    },
+    {
+      "dataset": "stereo4d",
+      "vid": "yCWKQEdtdXI_761695028",
+      "prompt": "a white car drives to the right",
+      "tracks_type": "object",
+      "adapter": "stereo4d",
+      "triptych": "videos/stereo4d/yCWKQEdtdXI_761695028.mp4"
+    },
+    {
+      "dataset": "stereo4d",
+      "vid": "6g6DFf9vcew_934234234",
+      "prompt": "a yellow car drives to the left",
+      "tracks_type": "object",
+      "adapter": "stereo4d",
+      "triptych": "videos/stereo4d/6g6DFf9vcew_934234234.mp4"
+    },
+    {
+      "dataset": "stereo4d",
+      "vid": "qQbh8CYb8zc_47080000",
+      "prompt": "a woman walks to the right",
+      "tracks_type": "object",
+      "adapter": "stereo4d",
+      "triptych": "videos/stereo4d/qQbh8CYb8zc_47080000.mp4"
+    },
+    {
+      "dataset": "stereo4d",
+      "vid": "8KrOs6uzJLU_282582583",
+      "prompt": "a person speaks and gestures with their hands",
+      "tracks_type": "object",
+      "adapter": "stereo4d",
+      "triptych": "videos/stereo4d/8KrOs6uzJLU_282582583.mp4"
+    },
+    {
+      "dataset": "stereo4d",
+      "vid": "SMBxUizk4pU_698832165",
+      "prompt": "a person walks to the right",
+      "tracks_type": "object",
+      "adapter": "stereo4d",
+      "triptych": "videos/stereo4d/SMBxUizk4pU_698832165.mp4"
+    },
+    {
+      "dataset": "stereo4d",
+      "vid": "MUCXobTIOIU_48448448",
+      "prompt": "a group of people walk forward",
+      "tracks_type": "object",
+      "adapter": "stereo4d",
+      "triptych": "videos/stereo4d/MUCXobTIOIU_48448448.mp4"
+    },
+    {
+      "dataset": "stereo4d",
+      "vid": "Q-Qy2h1UDiE_77811144",
+      "prompt": "a person slides down a water slide",
+      "tracks_type": "object",
+      "adapter": "stereo4d",
+      "triptych": "videos/stereo4d/Q-Qy2h1UDiE_77811144.mp4"
+    },
+    {
+      "dataset": "stereo4d",
+      "vid": "1HQA2D4X5mk_37037037",
+      "prompt": "two people walk side by side on a sidewalk",
+      "tracks_type": "object",
+      "adapter": "stereo4d",
+      "triptych": "videos/stereo4d/1HQA2D4X5mk_37037037.mp4"
+    },
+    {
+      "dataset": "stereo4d",
+      "vid": "4oYUGkzdkbQ_215281949",
+      "prompt": "a person walks to the right",
+      "tracks_type": "object",
+      "adapter": "stereo4d",
+      "triptych": "videos/stereo4d/4oYUGkzdkbQ_215281949.mp4"
+    },
+    {
+      "dataset": "stereo4d",
+      "vid": "83CwJAQXWYg_101835169",
+      "prompt": "a white van drives to the right",
+      "tracks_type": "object",
+      "adapter": "stereo4d",
+      "triptych": "videos/stereo4d/83CwJAQXWYg_101835169.mp4"
+    },
+    {
+      "dataset": "stereo4d",
+      "vid": "TAJ-0EeE52A_128528529",
+      "prompt": "a person walks to the left",
+      "tracks_type": "object",
+      "adapter": "stereo4d",
+      "triptych": "videos/stereo4d/TAJ-0EeE52A_128528529.mp4"
+    },
+    {
+      "dataset": "stereo4d",
+      "vid": "yj32MofLD5o_598098098",
+      "prompt": "a person walks and looks around",
+      "tracks_type": "object",
+      "adapter": "stereo4d",
+      "triptych": "videos/stereo4d/yj32MofLD5o_598098098.mp4"
+    },
+    {
+      "dataset": "stereo4d",
+      "vid": "SvTM4cHzOZA_211811812",
+      "prompt": "a float with a large drum moves to the right",
+      "tracks_type": "object",
+      "adapter": "stereo4d",
+      "triptych": "videos/stereo4d/SvTM4cHzOZA_211811812.mp4"
+    },
+    {
+      "dataset": "stereo4d",
+      "vid": "z1cE7Fr6uZY_68468468",
+      "prompt": "a white van drives to the left",
+      "tracks_type": "object",
+      "adapter": "stereo4d",
+      "triptych": "videos/stereo4d/z1cE7Fr6uZY_68468468.mp4"
+    },
+    {
+      "dataset": "stereo4d",
+      "vid": "Jk4rSzltOKo_768902236",
+      "prompt": "a white car drives to the left",
+      "tracks_type": "object",
+      "adapter": "stereo4d",
+      "triptych": "videos/stereo4d/Jk4rSzltOKo_768902236.mp4"
+    },
+    {
+      "dataset": "stereo4d",
+      "vid": "2mEuxrkClzk_766099433",
+      "prompt": "a person walks away from the camera",
+      "tracks_type": "object",
+      "adapter": "stereo4d",
+      "triptych": "videos/stereo4d/2mEuxrkClzk_766099433.mp4"
+    },
+    {
+      "dataset": "stereo4d",
+      "vid": "xSRvq_V64A4_28428428",
+      "prompt": "a person walks along a path",
+      "tracks_type": "object",
+      "adapter": "stereo4d",
+      "triptych": "videos/stereo4d/xSRvq_V64A4_28428428.mp4"
+    },
+    {
+      "dataset": "stereo4d",
+      "vid": "3GI7ugXNpVk_32432432",
+      "prompt": "a boat sails to the left along the river",
+      "tracks_type": "object",
+      "adapter": "stereo4d",
+      "triptych": "videos/stereo4d/3GI7ugXNpVk_32432432.mp4"
+    },
+    {
+      "dataset": "stereo4d",
+      "vid": "_4iTjyzwJ8A_200867534",
+      "prompt": "two teams pull a rope in a tug-of-war competition",
+      "tracks_type": "object",
+      "adapter": "stereo4d",
+      "triptych": "videos/stereo4d/_4iTjyzwJ8A_200867534.mp4"
+    },
+    {
+      "dataset": "stereo4d",
+      "vid": "YnBddI3HvKc_28428428",
+      "prompt": "a woman in a pink jacket walks away from the camera",
+      "tracks_type": "object",
+      "adapter": "stereo4d",
+      "triptych": "videos/stereo4d/YnBddI3HvKc_28428428.mp4"
+    },
+    {
+      "dataset": "stereo4d",
+      "vid": "MXF73wVBfs4_96000000",
+      "prompt": "a dark gray car drives through a roundabout",
+      "tracks_type": "object",
+      "adapter": "stereo4d",
+      "triptych": "videos/stereo4d/MXF73wVBfs4_96000000.mp4"
+    },
+    {
+      "dataset": "stereo4d",
+      "vid": "zWi0Ur-KdiA_508908909",
+      "prompt": "a person walks to the right and points at the water",
+      "tracks_type": "object",
+      "adapter": "stereo4d",
+      "triptych": "videos/stereo4d/zWi0Ur-KdiA_508908909.mp4"
+    },
+    {
+      "dataset": "stereo4d",
+      "vid": "xJG9U2KJwyA_830430430",
+      "prompt": "a person walks with a child on a bridge",
+      "tracks_type": "object",
+      "adapter": "stereo4d",
+      "triptych": "videos/stereo4d/xJG9U2KJwyA_830430430.mp4"
+    },
+    {
+      "dataset": "stereo4d",
+      "vid": "U2wL-11brxY_379846513",
+      "prompt": "a man walks to the left",
+      "tracks_type": "object",
+      "adapter": "stereo4d",
+      "triptych": "videos/stereo4d/U2wL-11brxY_379846513.mp4"
+    },
+    {
+      "dataset": "stereo4d",
+      "vid": "mBI_TYEef7U_35101768",
+      "prompt": "a person walks down a path",
+      "tracks_type": "object",
+      "adapter": "stereo4d",
+      "triptych": "videos/stereo4d/mBI_TYEef7U_35101768.mp4"
+    },
+    {
+      "dataset": "stereo4d",
+      "vid": "1LVkjXHwIkc_75141808",
+      "prompt": "a parade float drives down the street",
+      "tracks_type": "object",
+      "adapter": "stereo4d",
+      "triptych": "videos/stereo4d/1LVkjXHwIkc_75141808.mp4"
+    },
+    {
+      "dataset": "stereo4d",
+      "vid": "rcVBZfskDPw_255855856",
+      "prompt": "a group of people walk to the left",
+      "tracks_type": "object",
+      "adapter": "stereo4d",
+      "triptych": "videos/stereo4d/rcVBZfskDPw_255855856.mp4"
+    },
+    {
+      "dataset": "stereo4d",
+      "vid": "sLYBMqXa2KY_404204204",
+      "prompt": "a person rotates the bike and inspects it carefully",
+      "tracks_type": "object",
+      "adapter": "stereo4d",
+      "triptych": "videos/stereo4d/sLYBMqXa2KY_404204204.mp4"
+    },
+    {
+      "dataset": "stereo4d",
+      "vid": "P1bz0A5MKLc_567167167",
+      "prompt": "a person runs on a sidewalk",
+      "tracks_type": "object",
+      "adapter": "stereo4d",
+      "triptych": "videos/stereo4d/P1bz0A5MKLc_567167167.mp4"
+    },
+    {
+      "dataset": "stereo4d",
+      "vid": "zWi0Ur-KdiA_853586920",
+      "prompt": "a person rotates the bike and inspects it carefully",
+      "tracks_type": "object",
+      "adapter": "stereo4d",
+      "triptych": "videos/stereo4d/zWi0Ur-KdiA_853586920.mp4"
+    },
+    {
+      "dataset": "stereo4d",
+      "vid": "gNub4s9_gIs_151651652",
+      "prompt": "people walk around a shopping mall",
+      "tracks_type": "object",
+      "adapter": "stereo4d",
+      "triptych": "videos/stereo4d/gNub4s9_gIs_151651652.mp4"
+    },
+    {
+      "dataset": "stereo4d",
+      "vid": "u7Yz03ArSRI_48448448",
+      "prompt": "a white truck drives to the left",
+      "tracks_type": "object",
+      "adapter": "stereo4d",
+      "triptych": "videos/stereo4d/u7Yz03ArSRI_48448448.mp4"
+    },
+    {
+      "dataset": "stereo4d",
+      "vid": "Eo5PjJS6PSU_248648649",
+      "prompt": "a man walks to the right",
+      "tracks_type": "object",
+      "adapter": "stereo4d",
+      "triptych": "videos/stereo4d/Eo5PjJS6PSU_248648649.mp4"
+    },
+    {
+      "dataset": "stereo4d",
+      "vid": "XwASPi4Pwdg_41775108",
+      "prompt": "a blue train moves to the right",
+      "tracks_type": "object",
+      "adapter": "stereo4d",
+      "triptych": "videos/stereo4d/XwASPi4Pwdg_41775108.mp4"
+    },
+    {
+      "dataset": "stereo4d",
+      "vid": "lNYkHJfn4gU_263630297",
+      "prompt": "a person walks towards the camera",
+      "tracks_type": "object",
+      "adapter": "stereo4d",
+      "triptych": "videos/stereo4d/lNYkHJfn4gU_263630297.mp4"
+    },
+    {
+      "dataset": "stereo4d",
+      "vid": "5jpqdWfr-gI_168568569",
+      "prompt": "a yellow train moves to the left",
+      "tracks_type": "object",
+      "adapter": "stereo4d",
+      "triptych": "videos/stereo4d/5jpqdWfr-gI_168568569.mp4"
+    },
+    {
+      "dataset": "stereo4d",
+      "vid": "ymTkCoTXjFc_47280000",
+      "prompt": "a black car drives to the right",
+      "tracks_type": "object",
+      "adapter": "stereo4d",
+      "triptych": "videos/stereo4d/ymTkCoTXjFc_47280000.mp4"
+    },
+    {
+      "dataset": "stereo4d",
+      "vid": "0rCUKDUrTRo_21755088",
+      "prompt": "a woman walks to the left",
+      "tracks_type": "object",
+      "adapter": "stereo4d",
+      "triptych": "videos/stereo4d/0rCUKDUrTRo_21755088.mp4"
+    },
+    {
+      "dataset": "stereo4d",
+      "vid": "PIL_IAEMvqU_372806139",
+      "prompt": "a dark gray car drives to the left along the road",
+      "tracks_type": "object",
+      "adapter": "stereo4d",
+      "triptych": "videos/stereo4d/PIL_IAEMvqU_372806139.mp4"
+    },
+    {
+      "dataset": "stereo4d",
+      "vid": "4rzwFR-prqk_640874208",
+      "prompt": "two elves juggle beach balls and then spin around",
+      "tracks_type": "object",
+      "adapter": "stereo4d",
+      "triptych": "videos/stereo4d/4rzwFR-prqk_640874208.mp4"
+    },
+    {
+      "dataset": "stereo4d",
+      "vid": "MobqiXGvNq8_21755088",
+      "prompt": "a blue train moves to the right",
+      "tracks_type": "object",
+      "adapter": "stereo4d",
+      "triptych": "videos/stereo4d/MobqiXGvNq8_21755088.mp4"
+    },
+    {
+      "dataset": "stereo4d",
+      "vid": "TyBE8N6Q50Q_61227895",
+      "prompt": "a white bird flies to the right",
+      "tracks_type": "object",
+      "adapter": "stereo4d",
+      "triptych": "videos/stereo4d/TyBE8N6Q50Q_61227895.mp4"
+    },
+    {
+      "dataset": "stereo4d",
+      "vid": "zWi0Ur-KdiA_873606940",
+      "prompt": "a boat sails to the left along the river",
+      "tracks_type": "object",
+      "adapter": "stereo4d",
+      "triptych": "videos/stereo4d/zWi0Ur-KdiA_873606940.mp4"
+    },
+    {
+      "dataset": "stereo4d",
+      "vid": "QpZUsmd0UrU_411644978",
+      "prompt": "a person wearing a black vest walks to the right",
+      "tracks_type": "object",
+      "adapter": "stereo4d",
+      "triptych": "videos/stereo4d/QpZUsmd0UrU_411644978.mp4"
+    },
+    {
+      "dataset": "stereo4d",
+      "vid": "4ECOoYl2Lvw_115782449",
+      "prompt": "a person walks to the right",
+      "tracks_type": "object",
+      "adapter": "stereo4d",
+      "triptych": "videos/stereo4d/4ECOoYl2Lvw_115782449.mp4"
+    },
+    {
+      "dataset": "stereo4d",
+      "vid": "NTUEjVZckR0_187587588",
+      "prompt": "a person rides a bicycle to the left",
+      "tracks_type": "object",
+      "adapter": "stereo4d",
+      "triptych": "videos/stereo4d/NTUEjVZckR0_187587588.mp4"
+    },
+    {
+      "dataset": "stereo4d",
+      "vid": "cDScCxHirwo_214581248",
+      "prompt": "a man walks away from the camera",
+      "tracks_type": "object",
+      "adapter": "stereo4d",
+      "triptych": "videos/stereo4d/cDScCxHirwo_214581248.mp4"
+    },
+    {
+      "dataset": "stereo4d",
+      "vid": "V2ORjtuEv_o_527694361",
+      "prompt": "a boat sails to the left along the river",
+      "tracks_type": "object",
+      "adapter": "stereo4d",
+      "triptych": "videos/stereo4d/V2ORjtuEv_o_527694361.mp4"
+    },
+    {
+      "dataset": "stereo4d",
+      "vid": "5qp6gA_s3qA_292392392",
+      "prompt": "a dark gray car drives through a roundabout",
+      "tracks_type": "object",
+      "adapter": "stereo4d",
+      "triptych": "videos/stereo4d/5qp6gA_s3qA_292392392.mp4"
+    },
+    {
+      "dataset": "stereo4d",
+      "vid": "OwD-FuZX_n4_952318986",
+      "prompt": "a person walks on a dirt path",
+      "tracks_type": "object",
+      "adapter": "stereo4d",
+      "triptych": "videos/stereo4d/OwD-FuZX_n4_952318986.mp4"
+    },
+    {
+      "dataset": "stereo4d",
+      "vid": "7P5MEQEfZm8_28428428",
+      "prompt": "a person walks to the left",
+      "tracks_type": "object",
+      "adapter": "stereo4d",
+      "triptych": "videos/stereo4d/7P5MEQEfZm8_28428428.mp4"
+    },
+    {
+      "dataset": "stereo4d",
+      "vid": "reDutdFNpXk_412312312",
+      "prompt": "a person pushes a wheelchair to the left",
+      "tracks_type": "object",
+      "adapter": "stereo4d",
+      "triptych": "videos/stereo4d/reDutdFNpXk_412312312.mp4"
+    },
+    {
+      "dataset": "stereo4d",
+      "vid": "QjJ3XHmARO8_28428428",
+      "prompt": "a blue train moves to the right",
+      "tracks_type": "object",
+      "adapter": "stereo4d",
+      "triptych": "videos/stereo4d/QjJ3XHmARO8_28428428.mp4"
+    },
+    {
+      "dataset": "stereo4d",
+      "vid": "okWCr_JdgUk_247981315",
+      "prompt": "a person walks down a hallway",
+      "tracks_type": "object",
+      "adapter": "stereo4d",
+      "triptych": "videos/stereo4d/okWCr_JdgUk_247981315.mp4"
+    },
+    {
+      "dataset": "stereo4d",
+      "vid": "Jo8369qgvmU_29320000",
+      "prompt": "a black car drives to the left",
+      "tracks_type": "object",
+      "adapter": "stereo4d",
+      "triptych": "videos/stereo4d/Jo8369qgvmU_29320000.mp4"
+    },
+    {
+      "dataset": "stereo4d",
+      "vid": "LvZyTVR8Bjg_923590257",
+      "prompt": "a boat sails to the left along the river",
+      "tracks_type": "object",
+      "adapter": "stereo4d",
+      "triptych": "videos/stereo4d/LvZyTVR8Bjg_923590257.mp4"
+    },
+    {
+      "dataset": "stereo4d",
+      "vid": "4SDseGKnMSM_55121788",
+      "prompt": "a person walks through a market",
+      "tracks_type": "object",
+      "adapter": "stereo4d",
+      "triptych": "videos/stereo4d/4SDseGKnMSM_55121788.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "dd8d8cc91d",
+      "prompt": "a person is kitesurfing on the sea",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/dd8d8cc91d.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "e53e21aa02",
+      "prompt": "A person is sitting on the ground, holding a plastic bag and waving it in front of a rabbit",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/e53e21aa02.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "7f54132e48",
+      "prompt": "a monkey jumps up and climbs a pillar",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/7f54132e48.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "95bd88da55",
+      "prompt": "a spotted shark swims to the left",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/95bd88da55.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "b01080b5d3",
+      "prompt": "an owl holds a chick in its beak",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/b01080b5d3.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "2268cb1ffd",
+      "prompt": "a bird is standing on a tree and eating",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/2268cb1ffd.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "b8c03d1091",
+      "prompt": "A man in orange clothing is holding a tennis racket and spinning around",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/b8c03d1091.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "ece6bc9e92",
+      "prompt": "two foxes are playing with each other",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/ece6bc9e92.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "7b39fe7371",
+      "prompt": "a bike rider rides a dirt bike on a dirt track",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/7b39fe7371.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "644081b88d",
+      "prompt": "two sharks swim in the sea",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/644081b88d.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "a5da03aef1",
+      "prompt": "a monkey is bathing in a bathtub",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/a5da03aef1.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "87ad6c5253",
+      "prompt": "two people ride motorcycles on the road",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/87ad6c5253.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "83ae88d217",
+      "prompt": "a person holds a tennis racket and explains its features",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/83ae88d217.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "5eef7ed4f4",
+      "prompt": "a person rides a white horse and jumps over a fence",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/5eef7ed4f4.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "39545e20b7",
+      "prompt": "a lizard opens its mouth to eat a bug",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/39545e20b7.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "67e717d6bd",
+      "prompt": "a person rides a motorcycle on a mountain road",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/67e717d6bd.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "3d690473e1",
+      "prompt": "a baby monkey is lying on the ground and looking up",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/3d690473e1.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "b1b44669af",
+      "prompt": "a person rides a bicycle from a wall to the ground",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/b1b44669af.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "61344be2f6",
+      "prompt": "A big monkey is sitting on a tree, eating something, while a small monkey climbs up the tree",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/61344be2f6.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "53d9c45013",
+      "prompt": "person_0 and person_2 are playing rock-paper-scissors in the swimming pool",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/53d9c45013.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "b5b9da5364",
+      "prompt": "a cat jumps down from a table",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/b5b9da5364.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "eda8ab984b",
+      "prompt": "A person is holding a piece of white paper and teasing a rabbit",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/eda8ab984b.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "337dde2e2d",
+      "prompt": "A person is fishing and catches a fish",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/337dde2e2d.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "d3b2cc407e",
+      "prompt": "a person rides a skateboard on a dirt road",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/d3b2cc407e.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "04d62d9d98",
+      "prompt": "a person skateboards on a road",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/04d62d9d98.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "4cf5bc3e60",
+      "prompt": "a boat sails to the right along the river",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/4cf5bc3e60.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "8962e62d49",
+      "prompt": "person_0 and person_1 are walking on the beach, and person_2 is sitting on the beach",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/8962e62d49.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "13e3070469",
+      "prompt": "three zebras walk to the left",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/13e3070469.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "f9c68eaa64",
+      "prompt": "a panda holds a ball with its left hand and swings it up and down",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/f9c68eaa64.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "375a49d38f",
+      "prompt": "A small monkey crawls towards a big monkey and then falls down",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/375a49d38f.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "3efc6e9892",
+      "prompt": "a horse walks to the left",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/3efc6e9892.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "acb73e4297",
+      "prompt": "a brown and white rabbit eats corn",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/acb73e4297.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "9f3734c3a4",
+      "prompt": "a monkey eats a banana",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/9f3734c3a4.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "90c7a87887",
+      "prompt": "a person walks away while holding a skateboard",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/90c7a87887.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "3a5abd7d89",
+      "prompt": "A black and white cat is scratching the side of a box where an orange cat is sitting",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/3a5abd7d89.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "d5c6c9eca2",
+      "prompt": "a dark gray car drives through a roundabout",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/d5c6c9eca2.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "47568a6ab4",
+      "prompt": "a group of people are dancing",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/47568a6ab4.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "a18c2422c5",
+      "prompt": "person_0 is doing weightlifting, and person_1 is standing on the right side",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/a18c2422c5.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "732626383b",
+      "prompt": "person_0 and person_1 are walking on the road",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/732626383b.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "d927fae122",
+      "prompt": "a snake is coiling around a mouse",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/d927fae122.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "2c04b887b7",
+      "prompt": "a fox is biting the neck of another fox",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/2c04b887b7.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "68cb45fda3",
+      "prompt": "A black dog and a gray duck are playing together",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/68cb45fda3.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "324c4c38f6",
+      "prompt": "A leopard jumps up to a mirror and then walks away",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/324c4c38f6.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "4017e1c6b8",
+      "prompt": "A man is sitting on a toy train, and the train is moving forward",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/4017e1c6b8.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "3cc6f90cb2",
+      "prompt": "an elephant walks to the right",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/3cc6f90cb2.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "6a6ad57dfe",
+      "prompt": "a person rides a skateboard on a dirt road",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/6a6ad57dfe.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "5e35512dd7",
+      "prompt": "a monkey is eating a banana",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/5e35512dd7.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "060da2d9e1",
+      "prompt": "two boxers compete in a boxing game",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/060da2d9e1.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "fa04c615cf",
+      "prompt": "a person rides a skateboard on a road",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/fa04c615cf.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "6bf584200f",
+      "prompt": "a black and white rabbit chases a gray and white rabbit",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/6bf584200f.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "e4d4872dab",
+      "prompt": "a person skateboards on a road",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/e4d4872dab.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "9a02c70ba2",
+      "prompt": "a zebra and a horse are playing with each other",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/9a02c70ba2.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "c937eb0b83",
+      "prompt": "a person is juggling keys",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/c937eb0b83.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "7e1922575c",
+      "prompt": "A man is holding a cow and then puts it down",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/7e1922575c.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "addb48d803",
+      "prompt": "a man in black clothes is doing dumbbell front raises",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/addb48d803.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "7828af8bff",
+      "prompt": "A person holds a deer's antlers with both hands",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/7828af8bff.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "72a810a799",
+      "prompt": "a fox is eating food",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/72a810a799.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "2489d78320",
+      "prompt": "a giant panda walks to the right and then stands up",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/2489d78320.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "4fdfef4dea",
+      "prompt": "two people ride bicycles down a mountain road",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/4fdfef4dea.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "36f5cc68fd",
+      "prompt": "a brown and white dog walks to the right",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/36f5cc68fd.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "4a088fe99a",
+      "prompt": "a cat stands on its hind legs and pulls a curtain",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/4a088fe99a.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "197f3ab6f3",
+      "prompt": "a giant panda climbs up a tree",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/197f3ab6f3.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "c03062c1a7",
+      "prompt": "a black van drives to the left",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/c03062c1a7.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "2000c02f9d",
+      "prompt": "a person is skateboarding on a platform",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/2000c02f9d.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "115ee1072c",
+      "prompt": "a brown cow walks to the front",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/115ee1072c.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "d6b8309d58",
+      "prompt": "two people are skydiving in the sky",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/d6b8309d58.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "69aebf7669",
+      "prompt": "a brown and white rabbit is eating",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/69aebf7669.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "8c684b7e8a",
+      "prompt": "a bike rider rides a bmx bike on a dirt track",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/8c684b7e8a.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "98eda8fd6b",
+      "prompt": "A cat walks to the right and then turns to the left",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/98eda8fd6b.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "8e2fd40b74",
+      "prompt": "two polar bears swim in the water",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/8e2fd40b74.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "e6261d2348",
+      "prompt": "two ducks swim in the water",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/e6261d2348.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "d7bb6b37a7",
+      "prompt": "a snake moves to the right",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/d7bb6b37a7.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "72acb8cdf6",
+      "prompt": "a gray parrot holds a green object in its beak",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/72acb8cdf6.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "c7cef4aee2",
+      "prompt": "a person rides a bicycle and jumps over a wooden obstacle",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/c7cef4aee2.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "ce4f0a266f",
+      "prompt": "a panda is eating bamboo",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/ce4f0a266f.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "30c35c64a4",
+      "prompt": "a gorilla walks to the right and sits on a pile of grass",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/30c35c64a4.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "8ca6a4f60f",
+      "prompt": "a giant panda climbs up a tree",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/8ca6a4f60f.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "ef232a2aed",
+      "prompt": "a brown dog walks to the right",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/ef232a2aed.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "1b3fa67f0e",
+      "prompt": "a white airplane is moving on the runway",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/1b3fa67f0e.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "ae8545d581",
+      "prompt": "a person rides a bicycle and jumps over a pillar",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/ae8545d581.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "1b8680f8cd",
+      "prompt": "two people play tennis on the tennis court",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/1b8680f8cd.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "e4ef0a3a34",
+      "prompt": "a firefighter closes the compartment of a fire truck",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/e4ef0a3a34.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "36c7dac02f",
+      "prompt": "a white duck is playing with a black duck",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/36c7dac02f.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "e72f6104e1",
+      "prompt": "a leopard runs to the right",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/e72f6104e1.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "4019231330",
+      "prompt": "a person wearing a white shirt hits a tennis ball with a tennis racket",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/4019231330.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "49b16e9377",
+      "prompt": "a person is snowboarding on the snow",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/49b16e9377.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "208833d1d1",
+      "prompt": "a deer is lying on the ground and shaking its head",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/208833d1d1.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "6b0322b95f",
+      "prompt": "two people play table tennis",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/6b0322b95f.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "442bf02b66",
+      "prompt": "a person jumps over a wooden board",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/442bf02b66.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "9fce1af7db",
+      "prompt": "four people are riding motorcycles on a racetrack",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/9fce1af7db.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "7b918ccb8a",
+      "prompt": "a snake curls up and then moves its head",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/7b918ccb8a.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "ce31fb22f5",
+      "prompt": "person_0 and person_1 are sitting on a blue mat, and person_2 is pushing the mat",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/ce31fb22f5.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "70c3e97e41",
+      "prompt": "a frog sits on the ground and looks at a bowl of worms",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/70c3e97e41.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "b69926d9fa",
+      "prompt": "a person wearing a blue shirt is sitting on a subway car",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/b69926d9fa.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "a965504e88",
+      "prompt": "a person looks down and smiles",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/a965504e88.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "6b9c43c25a",
+      "prompt": "a parrot is being held by a person",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/6b9c43c25a.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "1d6ff083aa",
+      "prompt": "a person wearing a black shirt is crawling on the ground",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/1d6ff083aa.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "b7bcbe6466",
+      "prompt": "a fox is lying on the ground and being caressed by a person",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/b7bcbe6466.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "63936d7de5",
+      "prompt": "A person wearing a red shirt and pants is standing on the left side of the screen, facing a yellow excavator on the left and a white truck on the right. The excavator is pulling the white truck towards the left side of the screen",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/63936d7de5.mp4"
+    },
+    {
+      "dataset": "yt-vis",
+      "vid": "6e4ffaaee4",
+      "prompt": "an elephant walks to the left in the water",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/yt-vis/6e4ffaaee4.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "bike-packing",
+      "prompt": "a person rotates the bike and inspects it carefully",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/bike-packing.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "blackswan",
+      "prompt": "a black swan swims to the right",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/blackswan.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "bmx-bumps",
+      "prompt": "a bike rider rides a bmx bike on a dirt track",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/bmx-bumps.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "bmx-trees",
+      "prompt": "a bike rider rides the bike along the road",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/bmx-trees.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "boat",
+      "prompt": "a boat sails to the left along the river",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/boat.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "boxing-fisheye",
+      "prompt": "two boxers compete in a boxing game with a referee on the side",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/boxing-fisheye.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "breakdance-flare",
+      "prompt": "a breakdancer performs flares",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/breakdance-flare.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "breakdance",
+      "prompt": "a dancer performs breakdancing in front of a crowd",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/breakdance.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "bus",
+      "prompt": "a bus goes to the right along the road",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/bus.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "car-roundabout",
+      "prompt": "a dark gray car drives through a roundabout",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/car-roundabout.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "car-shadow",
+      "prompt": "a silver car drive to the left",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/car-shadow.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "car-turn",
+      "prompt": "a silver car follows the road and slowly turns to the right",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/car-turn.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "cat-girl",
+      "prompt": "a girl holds a cat and smiles",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/cat-girl.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "classic-car",
+      "prompt": "a classic car drives to the left",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/classic-car.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "color-run",
+      "prompt": "a person sprays color in a running race",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/color-run.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "cows",
+      "prompt": "a cow walks slowly forward",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/cows.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "crossing",
+      "prompt": "two persons crosses the road while a car drives in the opposite direction in the back",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/crossing.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "dance-jump",
+      "prompt": "the dancer jumps",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/dance-jump.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "dance-twirl",
+      "prompt": "the dancer performs a twirl.",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/dance-twirl.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "dancing",
+      "prompt": "three persons dance in front of the crowd",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/dancing.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "dog-agility",
+      "prompt": "the dog jumps and weaves between poles",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/dog-agility.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "dog-gooses",
+      "prompt": "the dog chases the 4 geese",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/dog-gooses.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "dog",
+      "prompt": "a dog walks on the yellow grass",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/dog.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "dogs-scale",
+      "prompt": "put a dog on the weight",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/dogs-scale.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "drift-chicane",
+      "prompt": "a racing car drifts through the chicane",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/drift-chicane.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "drift-straight",
+      "prompt": "a racing car drifts on a straight track",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/drift-straight.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "drift-turn",
+      "prompt": "a racing car drifts around a turn",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/drift-turn.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "drone",
+      "prompt": "the drone falls to the ground. then one person picks it up",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/drone.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "elephant",
+      "prompt": "an elephant slowly walks",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/elephant.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "flamingo",
+      "prompt": "a flamingo dips its beak into the water while walking to the right",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/flamingo.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "goat",
+      "prompt": "a goat walks along the cliff",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/goat.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "gold-fish",
+      "prompt": "several fishes swims in the water",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/gold-fish.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "hike",
+      "prompt": "a person is hiking and walks to the right",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/hike.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "hockey",
+      "prompt": "a hockey player prepares and shoots",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/hockey.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "horsejump-high",
+      "prompt": "a rider on a horse jumps over a high obstacle",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/horsejump-high.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "judo",
+      "prompt": "a judo master flips another practitioner over",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/judo.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "kid-football",
+      "prompt": "a kid kicks soccer",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/kid-football.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "kite-surf",
+      "prompt": "a kite surfer surfs to the right",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/kite-surf.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "koala",
+      "prompt": "a koala moves onto a branch and holds onto it",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/koala.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "lab-coat",
+      "prompt": "three women students in lab coat standing looks at the camera",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/lab-coat.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "lady-running",
+      "prompt": "an old lady runs forward holding a note",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/lady-running.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "libby",
+      "prompt": "a dog walks to the right on grass",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/libby.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "lindy-hop",
+      "prompt": "several groups of dancers dance in the ball room",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/lindy-hop.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "loading",
+      "prompt": "a man moves a tv box to the cart",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/loading.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "longboard",
+      "prompt": "a man rides a skateboard and waves while a cyclist approaches from the opposite direction",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/longboard.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "lucia",
+      "prompt": "a lady walks to the right",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/lucia.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "mallard-fly",
+      "prompt": "a mallard starts to fly",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/mallard-fly.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "mallard-water",
+      "prompt": "a mallard swims in the water",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/mallard-water.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "miami-surf",
+      "prompt": "several surfers surf in the ocean",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/miami-surf.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "motocross-bumps",
+      "prompt": "a motorbike rider on a motorbike jumps through the bumps",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/motocross-bumps.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "motocross-jump",
+      "prompt": "a motorbike rider on a motorbike jumps through the bumps",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/motocross-jump.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "motorbike",
+      "prompt": "a motorbike with two passengers drives to the right",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/motorbike.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "night-race",
+      "prompt": "two racing cars race against each other",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/night-race.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "paragliding-launch",
+      "prompt": "a paraglider runs forward and launch the paragliding",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/paragliding-launch.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "paragliding",
+      "prompt": "a paraglider flys",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/paragliding.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "parkour",
+      "prompt": "a person is doing parkour",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/parkour.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "pigs",
+      "prompt": "little pigs walks to the big pig",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/pigs.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "rallye",
+      "prompt": "a rally car drives forward",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/rallye.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "rhino",
+      "prompt": "a rhino walks to the left",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/rhino.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "rollerblade",
+      "prompt": "a rollerblader rumps",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/rollerblade.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "schoolgirls",
+      "prompt": "a girl moves to the right while others stand",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/schoolgirls.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "scooter-board",
+      "prompt": "a person sits on a cart and drives it",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/scooter-board.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "scooter-gray",
+      "prompt": "a rider rides the scooter to the left",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/scooter-gray.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "sheep",
+      "prompt": "several sheeps walk",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/sheep.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "shooting",
+      "prompt": "a soldier slides down the rope while shooting",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/shooting.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "skate-park",
+      "prompt": "a skater skates in a skate park",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/skate-park.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "snowboard",
+      "prompt": "a snowboarder does a flip",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/snowboard.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "soapbox",
+      "prompt": "two drivers drive a self-made cart through a bump",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/soapbox.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "soccerball",
+      "prompt": "a soccer rolls from right to left",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/soccerball.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "stroller",
+      "prompt": "a person moves the stroller to the right",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/stroller.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "stunt",
+      "prompt": "a person slides down the skate park on a scooter",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/stunt.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "surf",
+      "prompt": "a person surfs to the right",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/surf.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "swing",
+      "prompt": "a lady swings on a swing",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/swing.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "tennis",
+      "prompt": "a tennis player does a forehand hit",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/tennis.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "tractor-sand",
+      "prompt": "a tractor drives around an obstacle on sand",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/tractor-sand.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "train",
+      "prompt": "a toy train turns left along the track",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/train.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "tuk-tuk",
+      "prompt": "three persons sit on a car",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/tuk-tuk.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "upside-down",
+      "prompt": "two persons ride on a rollercoaster",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/upside-down.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "varanus-cage",
+      "prompt": "a varanus crawls on the branch",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/varanus-cage.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "walking",
+      "prompt": "two persons walk down the street",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/walking.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "bear",
+      "prompt": "a brown bear walks to the left",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/bear.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "camel",
+      "prompt": "a camel walks to the right and then walks back",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/camel.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "disc-jockey",
+      "prompt": "two persons extend their arms",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/disc-jockey.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "dogs-jump",
+      "prompt": "two dogs jump for treat around a person",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/dogs-jump.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "horsejump-low",
+      "prompt": "a rider on a horse jumps over a low obstacle",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/horsejump-low.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "india",
+      "prompt": "women with Indian costume walk on the street",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/india.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "kite-walk",
+      "prompt": "the surfer backs up",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/kite-walk.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "mbike-trick",
+      "prompt": "a motorbike rider performs a burnout, spinning the tire and producing smoke",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/mbike-trick.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "planes-water",
+      "prompt": "airplane slowly moves forward",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/planes-water.mp4"
+    },
+    {
+      "dataset": "davis",
+      "vid": "scooter-black",
+      "prompt": "a rider rides the scooter to the left",
+      "tracks_type": "object",
+      "adapter": "dict",
+      "triptych": "videos/davis/scooter-black.mp4"
+    }
+  ]
+}

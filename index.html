@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diffusion-as-Shader × _GenTraj — cross-dataset gallery</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="topbar">
+    <div class="brand">
+      <span class="eyebrow">Qualitative results</span>
+      <button id="theme-toggle" title="Toggle light / dark">◐</button>
+    </div>
+    <h1>Track-conditioned video generation, across five datasets</h1>
+    <p class="lede">
+      Diffusion-as-Shader (CogVideoX-5b-I2V base + rainbow 3D-track conditioning) fed our
+      <em>_GenTraj</em> pipeline's tracks as the motion signal and a short caption as the content signal.
+      Each card shows the source RGB, the tracks we rendered, and the generated clip, side-by-side.
+    </p>
+  </div>
+</header>
+
+<main>
+
+<section id="controls">
+  <div class="tag-row">
+    <button class="tag-btn active" data-ds="all">all</button>
+    <button class="tag-btn egodex"   data-ds="egodex">egodex</button>
+    <button class="tag-btn hdepic"   data-ds="hdepic">hd-epic</button>
+    <button class="tag-btn stereo4d" data-ds="stereo4d">stereo4d</button>
+    <button class="tag-btn ytvis"    data-ds="yt-vis">yt-vis</button>
+    <button class="tag-btn davis"    data-ds="davis">davis</button>
+  </div>
+  <div class="counts" id="counts"></div>
+  <input id="search" type="text" placeholder="filter by prompt (e.g. ‘bowl’, ‘ball’, ‘drives’) …">
+</section>
+
+<section id="gallery"></section>
+
+<footer>
+  <p>
+    Base model: <a href="https://github.com/IGL-HKUST/DiffusionAsShader">Diffusion-as-Shader</a>
+    (<a href="https://arxiv.org/abs/2501.03847">arXiv 2501.03847</a>). Tracks from the
+    _GenTraj pipeline. No <code>--repaint</code>; frame&nbsp;0 of the source is the image conditioning.
+  </p>
+</footer>
+
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>

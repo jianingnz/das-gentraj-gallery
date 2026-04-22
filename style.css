@@ -140,6 +140,8 @@ h1 {
   background: rgba(232, 214, 106, 0.1);
 }
 
+#bench-table, #bench-per-clip { overflow-x: auto; }
+
 table.bench {
   width: 100%;
   border-collapse: collapse;

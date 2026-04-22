@@ -1,13 +1,13 @@
 {
   "n_total_tasks": 490,
-  "n_with_triptych": 456,
+  "n_with_triptych": 459,
   "per_dataset_counts": {
     "egodex": 100,
     "hdepic": 100,
     "stereo4d": 61,
     "yt-vis": 100,
     "davis": 90,
-    "experiment": 5
+    "experiment": 8
   },
   "items": [
     {
@@ -3662,6 +3662,33 @@
       "adapter": "world",
       "triptych": "videos/experiment/world_p2_blackswan.mp4",
       "experiment_note": "P2 frozen-view (world-space tracks)"
+    },
+    {
+      "dataset": "experiment",
+      "vid": "vs_wan_blackswan",
+      "prompt": "a black swan swims to the right",
+      "tracks_type": "object (P2) + Wan no-tracks",
+      "adapter": "comparison",
+      "triptych": "videos/experiment/vs_wan_blackswan.mp4",
+      "experiment_note": "DaS P2  vs  Wan2.2-TI2V-5B"
+    },
+    {
+      "dataset": "experiment",
+      "vid": "vs_wan_snowboard",
+      "prompt": "a snowboarder does a flip",
+      "tracks_type": "object (P2) + Wan no-tracks",
+      "adapter": "comparison",
+      "triptych": "videos/experiment/vs_wan_snowboard.mp4",
+      "experiment_note": "DaS P2  vs  Wan2.2-TI2V-5B"
+    },
+    {
+      "dataset": "experiment",
+      "vid": "vs_wan_soapbox",
+      "prompt": "two drivers drive a self-made cart through a bump",
+      "tracks_type": "object (P2) + Wan no-tracks",
+      "adapter": "comparison",
+      "triptych": "videos/experiment/vs_wan_soapbox.mp4",
+      "experiment_note": "DaS P2  vs  Wan2.2-TI2V-5B"
     }
   ]
 }

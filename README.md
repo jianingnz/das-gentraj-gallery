@@ -1,13 +1,35 @@
 # Diffusion-as-Shader × _GenTraj — cross-dataset gallery
 
-Static website of 451 qualitative video-generation results.
+Static website of 451 qualitative video-generation results **plus a 4-metric
+DaS-vs-Wan2.2 benchmark on 3 DAVIS clips**.
 
 [**Live site (GitHub Pages)**](https://jianingnz.github.io/das-gentraj-gallery/)
 
-## What's on the site
+## Benchmarks (DaS P2 vs Wan2.2-TI2V-5B on DAVIS n=3)
+
+Top of the page shows a numeric table over the four metrics, with the winning cell
+per column highlighted. Values sourced from `benchmark_summary.json`.
+
+| metric | direction | backbone / tool |
+| --- | --- | --- |
+| CLIP-T ↑ | frame↔prompt cosine, 8-frame sample | `open_clip` ViT-L-14 |
+| Tem-Con ↑ | adjacent-frame cosine | `open_clip` ViT-L-14 |
+| Subject-Consistency ↑ | VBench dimension | DINO ViT-B/16 |
+| FVD ↓ | Fréchet Video Distance | I3D via [`cd-fvd`](https://github.com/songweige/content-debiased-fvd) |
+
+**Caveat**: with n=3 real vs n=3 fake the FVD's covariance term is severely
+rank-deficient — the absolute number is indicative only. The three other
+metrics are frame-/clip-level means and remain meaningful at this scale.
+
+Both models generate at 720×480, 49 frames, 15 fps. Same image conditioning
+(source frame 0) and same text prompt. DaS P2 additionally consumes rainbow 3D-track
+conditioning; Wan uses text + first-frame image only.
+
+## Qualitative gallery
 
 Each card is a **triptych mp4** — *source RGB · 3D tracks we rendered · DaS's generated video* — plus
 the text prompt used for that run. Filter by dataset pill or by a substring of the prompt.
+The `experiment` tab additionally contains 3 DaS-vs-Wan side-by-side comparison clips.
 
 ## How the results were produced
 

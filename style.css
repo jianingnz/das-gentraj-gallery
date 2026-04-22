@@ -87,6 +87,146 @@ h1 {
 }
 .lede em { color: var(--text-heading); font-style: italic; }
 
+/* ---- Benchmarks section ---- */
+#benchmarks {
+  padding: 1.5rem 0 2.5rem;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 1rem;
+}
+
+.section-eyebrow {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  margin-bottom: 0.4rem;
+}
+
+#benchmarks h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 600;
+  font-size: clamp(1.3rem, 2.2vw, 1.7rem);
+  color: var(--text-heading);
+  line-height: 1.2;
+  margin-bottom: 0.75rem;
+}
+
+.section-blurb {
+  font-size: 0.95rem;
+  color: var(--text);
+  max-width: 760px;
+  margin-bottom: 1.25rem;
+}
+.section-blurb em { color: var(--text-heading); font-style: italic; }
+.section-blurb code { background: var(--bg-card); padding: 0.05rem 0.35rem; border-radius: 3px; border: 1px solid var(--border); }
+
+.section-footnote {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  max-width: 760px;
+  margin-top: 1rem;
+  line-height: 1.55;
+}
+.tag-chip {
+  display: inline-block;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.05rem 0.4rem;
+  border-radius: 3px;
+  color: #f4e4a0;
+  border: 1px solid rgba(232, 214, 106, 0.4);
+  background: rgba(232, 214, 106, 0.1);
+}
+
+table.bench {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.92rem;
+}
+table.bench th, table.bench td {
+  padding: 0.65rem 0.9rem;
+  text-align: right;
+  border-bottom: 1px solid var(--border);
+}
+table.bench thead th {
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  font-weight: 500;
+  background: var(--bg-header);
+  border-bottom: 1px solid var(--border-strong);
+}
+table.bench tbody th[scope="row"] {
+  text-align: left;
+  color: var(--text-heading);
+  font-weight: 500;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1rem;
+  font-style: italic;
+}
+table.bench td {
+  font-variant-numeric: tabular-nums;
+  color: var(--text);
+}
+table.bench td.win {
+  color: var(--accent);
+  font-weight: 600;
+}
+table.bench td.win::after {
+  content: " ✦";
+  color: var(--accent);
+  font-size: 0.7em;
+  vertical-align: 0.3em;
+}
+
+details.per-clip-details {
+  margin-top: 1.25rem;
+  border-top: 1px solid var(--border);
+  padding-top: 0.75rem;
+}
+details.per-clip-details > summary {
+  cursor: pointer;
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  padding: 0.5rem 0;
+  list-style: none;
+  user-select: none;
+}
+details.per-clip-details > summary::before {
+  content: "▸ ";
+  display: inline-block;
+  transition: transform 0.15s;
+}
+details[open].per-clip-details > summary::before { transform: rotate(90deg); }
+details.per-clip-details > summary:hover { color: var(--text-heading); }
+
+table.bench.per-clip {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+}
+table.bench.per-clip td.p-prompt {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-style: italic;
+  color: var(--text-heading);
+  text-align: left;
+  max-width: 360px;
+}
+table.bench.per-clip code {
+  font-size: 0.85em;
+  color: var(--text-secondary);
+}
+.note {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  margin-top: 0.5rem;
+}
+
 /* ---- Controls ---- */
 #controls {
   position: sticky;

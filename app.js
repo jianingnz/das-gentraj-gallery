@@ -11,11 +11,89 @@ let STATE = { dataset: "all", query: "" };
 const $ = s => document.querySelector(s);
 
 async function boot() {
-  const res = await fetch("manifest.json");
-  MANIFEST = await res.json();
+  const [manifestRes, benchRes] = await Promise.all([
+    fetch("manifest.json"),
+    fetch("benchmark_summary.json"),
+  ]);
+  MANIFEST = await manifestRes.json();
+  const bench = await benchRes.json();
   initTheme();
   initControls();
+  renderBenchmarks(bench);
   render();
+}
+
+// Per-metric metadata: display name, direction ("up" = higher better), formatter
+const METRICS = [
+  { key: "clip_t",              label: "CLIP-T",             dir: "up",   fmt: x => x.toFixed(4) },
+  { key: "tem_con",             label: "Tem-Con",            dir: "up",   fmt: x => x.toFixed(4) },
+  { key: "subject_consistency", label: "Subject-Cons.",      dir: "up",   fmt: x => x.toFixed(4) },
+  { key: "fvd",                 label: "FVD",                dir: "down", fmt: x => x.toFixed(1) },
+];
+
+const TAG_LABEL = {
+  das_p2:   "DaS P2 (ours)",
+  wan22_5b: "Wan 2.2 TI2V-5B",
+};
+
+function renderBenchmarks(bench) {
+  const tags = Object.keys(bench.tags);
+  // Winners per metric
+  const winners = {};
+  METRICS.forEach(m => {
+    let best = null, bestTag = null;
+    tags.forEach(t => {
+      const v = bench.tags[t][m.key];
+      const better = best === null
+        ? true
+        : (m.dir === "up" ? v > best : v < best);
+      if (better) { best = v; bestTag = t; }
+    });
+    winners[m.key] = bestTag;
+  });
+
+  const headerRow = `
+    <thead>
+      <tr>
+        <th></th>
+        ${METRICS.map(m => `<th>${m.label} ${m.dir === "up" ? "↑" : "↓"}</th>`).join("")}
+      </tr>
+    </thead>`;
+  const bodyRows = tags.map(tag => {
+    const s = bench.tags[tag];
+    const cells = METRICS.map(m => {
+      const val = s[m.key];
+      const wins = winners[m.key] === tag;
+      return `<td${wins ? ` class="win"` : ""}>${m.fmt(val)}</td>`;
+    }).join("");
+    return `<tr><th scope="row">${escapeHTML(TAG_LABEL[tag] || tag)}</th>${cells}</tr>`;
+  }).join("");
+
+  $("#bench-table").innerHTML = `<table class="bench">${headerRow}<tbody>${bodyRows}</tbody></table>`;
+
+  // Per-clip breakdown
+  const clips = bench.tags[tags[0]].per_clip.map(c => c.vid);
+  const perHeader = `
+    <thead>
+      <tr>
+        <th>model</th>
+        <th>clip</th>
+        <th>prompt</th>
+        ${METRICS.filter(m => m.key !== "fvd").map(m => `<th>${m.label} ${m.dir === "up" ? "↑" : "↓"}</th>`).join("")}
+      </tr>
+    </thead>`;
+  const perBody = tags.map(tag => {
+    return bench.tags[tag].per_clip.map((row, i) => {
+      const cells = METRICS.filter(m => m.key !== "fvd")
+        .map(m => `<td>${m.fmt(row[m.key])}</td>`).join("");
+      const firstCell = i === 0
+        ? `<th scope="row" rowspan="${clips.length}">${escapeHTML(TAG_LABEL[tag] || tag)}</th>`
+        : "";
+      return `<tr>${firstCell}<td><code>${escapeHTML(row.vid)}</code></td><td class="p-prompt">“${escapeHTML(row.prompt)}”</td>${cells}</tr>`;
+    }).join("");
+  }).join("");
+  $("#bench-per-clip").innerHTML = `<table class="bench per-clip">${perHeader}<tbody>${perBody}</tbody></table>
+    <p class="note">FVD is a set-level score (distribution distance), so it has no per-clip row.</p>`;
 }
 
 function initTheme() {

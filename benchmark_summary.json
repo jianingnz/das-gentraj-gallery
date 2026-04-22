@@ -1,0 +1,66 @@
+{
+  "tags": {
+    "das_p2": {
+      "clip_t": 0.2715052664279938,
+      "tem_con": 0.9624499082565308,
+      "subject_consistency": 0.9162414531326956,
+      "fvd": 2534.3457777194344,
+      "n_clips": 3,
+      "per_clip": [
+        {
+          "vid": "blackswan",
+          "prompt": "a black swan swims to the right",
+          "clip_t": 0.2770211696624756,
+          "tem_con": 0.9864838719367981,
+          "subject_consistency": 0.9886133378992478
+        },
+        {
+          "vid": "snowboard",
+          "prompt": "a snowboarder does a flip",
+          "clip_t": 0.26353487372398376,
+          "tem_con": 0.9596987366676331,
+          "subject_consistency": 0.8630152313659588
+        },
+        {
+          "vid": "soapbox",
+          "prompt": "two drivers drive a self-made cart through a bump",
+          "clip_t": 0.273959755897522,
+          "tem_con": 0.9411671161651611,
+          "subject_consistency": 0.8970957901328802
+        }
+      ]
+    },
+    "wan22_5b": {
+      "clip_t": 0.262017289797465,
+      "tem_con": 0.962243894735972,
+      "subject_consistency": 0.9238089504134323,
+      "fvd": 2411.720217274544,
+      "n_clips": 3,
+      "per_clip": [
+        {
+          "vid": "blackswan",
+          "prompt": "a black swan swims to the right",
+          "clip_t": 0.27296948432922363,
+          "tem_con": 0.9837509393692017,
+          "subject_consistency": 0.9767844459662834
+        },
+        {
+          "vid": "snowboard",
+          "prompt": "a snowboarder does a flip",
+          "clip_t": 0.25397002696990967,
+          "tem_con": 0.9559818506240845,
+          "subject_consistency": 0.9049120719234148
+        },
+        {
+          "vid": "soapbox",
+          "prompt": "two drivers drive a self-made cart through a bump",
+          "clip_t": 0.2591123580932617,
+          "tem_con": 0.9469988942146301,
+          "subject_consistency": 0.8897303333505988
+        }
+      ]
+    }
+  },
+  "per_clip": {},
+  "note": "n=3 real vs n=3 fake \u2014 FVD is indicative only at this sample size (Fr\u00e9chet covariance term is rank-deficient). CLIP-T / Tem-Con / Subject-Consistency are per-clip means and are meaningful at n=3."
+}

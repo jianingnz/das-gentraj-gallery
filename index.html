@@ -28,6 +28,30 @@
 
 <main>
 
+<section id="benchmarks">
+  <div class="section-eyebrow">Benchmarks</div>
+  <h2>DaS P2 vs Wan2.2-TI2V-5B — DAVIS (n=3)</h2>
+  <p class="section-blurb">
+    Three DAVIS clips (<code>blackswan</code>, <code>snowboard</code>, <code>soapbox</code>).
+    Both models generate at 720×480, 49&nbsp;frames, 15&nbsp;fps; same image conditioning (source
+    frame&nbsp;0) and the same text prompt. DaS P2 additionally consumes rainbow 3D-track
+    conditioning derived from world-frame <em>_GenTraj</em> tracks projected per-frame through
+    the c2w pose; Wan uses text + first-frame image only.
+  </p>
+  <div id="bench-table"></div>
+  <details class="per-clip-details">
+    <summary>Per-clip breakdown</summary>
+    <div id="bench-per-clip"></div>
+  </details>
+  <p class="section-footnote">
+    ↑ higher is better · ↓ lower is better · FVD uses I3D features via
+    <a href="https://github.com/songweige/content-debiased-fvd">cd-fvd</a>; at n=3 the Fréchet
+    covariance term is rank-deficient, so the absolute value is indicative only — the other
+    three metrics are frame/clip-level means and remain meaningful at this scale. Scroll past
+    the table for the qualitative triptychs on the <span class="tag-chip">experiment</span> tab.
+  </p>
+</section>
+
 <section id="controls">
   <div class="tag-row">
     <button class="tag-btn active" data-ds="all">all</button>

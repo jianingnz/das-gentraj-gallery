@@ -14,56 +14,50 @@
 <header>
   <div class="topbar">
     <div class="brand">
-      <span class="eyebrow">Qualitative results</span>
+      <span class="eyebrow">Qualitative results + bench</span>
       <button id="theme-toggle" title="Toggle light / dark">◐</button>
     </div>
     <h1>Track-conditioned video generation, across five datasets</h1>
     <p class="lede">
       Diffusion-as-Shader (CogVideoX-5b-I2V base + rainbow 3D-track conditioning) fed our
       <em>_GenTraj</em> pipeline's tracks as the motion signal and a short caption as the content signal.
-      Each card shows the source RGB, the tracks we rendered, and the generated clip, side-by-side.
+      The <strong>bench tabs</strong> compare DaS against Wan 2.2-TI2V-5B on 730 clips across five datasets;
+      the <strong>qualitative tabs</strong> are the 451 track-conditioned triptychs with no comparison.
     </p>
   </div>
 </header>
 
 <main>
 
-<section id="benchmarks">
-  <div class="section-eyebrow">Benchmarks</div>
-  <h2>DaS P2 vs Wan2.2-TI2V-5B — DAVIS (n=3)</h2>
-  <p class="section-blurb">
-    Three DAVIS clips (<code>blackswan</code>, <code>snowboard</code>, <code>soapbox</code>).
-    Both models generate at 720×480, 49&nbsp;frames, 15&nbsp;fps; same image conditioning (source
-    frame&nbsp;0) and the same text prompt. DaS P2 additionally consumes rainbow 3D-track
-    conditioning derived from world-frame <em>_GenTraj</em> tracks projected per-frame through
-    the c2w pose; Wan uses text + first-frame image only.
-  </p>
-  <div id="bench-table"></div>
-  <details class="per-clip-details">
-    <summary>Per-clip breakdown</summary>
-    <div id="bench-per-clip"></div>
-  </details>
-  <p class="section-footnote">
-    ↑ higher is better · ↓ lower is better · FVD uses I3D features via
-    <a href="https://github.com/songweige/content-debiased-fvd">cd-fvd</a>; at n=3 the Fréchet
-    covariance term is rank-deficient, so the absolute value is indicative only — the other
-    three metrics are frame/clip-level means and remain meaningful at this scale. Scroll past
-    the table for the qualitative triptychs on the <span class="tag-chip">experiment</span> tab.
-  </p>
-</section>
-
 <section id="controls">
-  <div class="tag-row">
-    <button class="tag-btn active" data-ds="all">all</button>
-    <button class="tag-btn egodex"     data-ds="egodex">egodex</button>
-    <button class="tag-btn hdepic"     data-ds="hdepic">hd-epic</button>
-    <button class="tag-btn stereo4d"   data-ds="stereo4d">stereo4d</button>
-    <button class="tag-btn ytvis"      data-ds="yt-vis">yt-vis</button>
-    <button class="tag-btn davis"      data-ds="davis">davis</button>
-    <button class="tag-btn experiment" data-ds="experiment">experiment</button>
+  <div class="tag-row" id="tag-row-bench">
+    <span class="group-label">bench</span>
+    <button class="tag-btn bench-davis    active" data-view="bench" data-ds="davis">davis</button>
+    <button class="tag-btn bench-egodex"          data-view="bench" data-ds="egodex">egodex</button>
+    <button class="tag-btn bench-ytvis"           data-view="bench" data-ds="yt-vis">yt-vis</button>
+    <button class="tag-btn bench-hdepic"          data-view="bench" data-ds="hdepic">hd-epic</button>
+    <button class="tag-btn bench-stereo4d"        data-view="bench" data-ds="stereo4d">stereo4d</button>
+    <button class="tag-btn bench-overall"         data-view="bench" data-ds="overall">overall</button>
+  </div>
+  <div class="tag-row" id="tag-row-qual">
+    <span class="group-label">qualitative</span>
+    <button class="tag-btn" data-view="qual" data-ds="all">all</button>
+    <button class="tag-btn egodex"     data-view="qual" data-ds="egodex">egodex</button>
+    <button class="tag-btn hdepic"     data-view="qual" data-ds="hdepic">hd-epic</button>
+    <button class="tag-btn stereo4d"   data-view="qual" data-ds="stereo4d">stereo4d</button>
+    <button class="tag-btn ytvis"      data-view="qual" data-ds="yt-vis">yt-vis</button>
+    <button class="tag-btn davis"      data-view="qual" data-ds="davis">davis</button>
+    <button class="tag-btn experiment" data-view="qual" data-ds="experiment">experiment</button>
   </div>
   <div class="counts" id="counts"></div>
   <input id="search" type="text" placeholder="filter by prompt (e.g. ‘bowl’, ‘ball’, ‘drives’) …">
+</section>
+
+<section id="bench-view">
+  <div id="bench-summary"></div>
+  <div id="bench-per-metric"></div>
+  <h3 id="bench-gallery-title" class="bench-gallery-title"></h3>
+  <div id="bench-gallery" class="bench-gallery"></div>
 </section>
 
 <section id="gallery"></section>
@@ -73,6 +67,8 @@
     Base model: <a href="https://github.com/IGL-HKUST/DiffusionAsShader">Diffusion-as-Shader</a>
     (<a href="https://arxiv.org/abs/2501.03847">arXiv 2501.03847</a>). Tracks from the
     _GenTraj pipeline. No <code>--repaint</code>; frame&nbsp;0 of the source is the image conditioning.
+    Comparison generations by <a href="https://github.com/Wan-Video/Wan2.2">Wan 2.2-TI2V-5B</a>
+    (text + first-frame image, no track conditioning).
   </p>
 </footer>
 

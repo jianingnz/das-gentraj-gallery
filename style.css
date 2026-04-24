@@ -404,3 +404,128 @@ footer {
   header, main { padding-left: 1rem; padding-right: 1rem; }
   .card-header { font-size: 0.85rem; }
 }
+
+/* ---- Bench view ---- */
+.group-label {
+  align-self: center;
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  margin-right: 0.25rem;
+}
+#tag-row-bench { margin-bottom: 0.5rem; }
+#tag-row-qual  { margin-bottom: 0.5rem; border-top: 1px dashed var(--border); padding-top: 0.6rem; }
+
+.tag-btn[data-view="bench"].active {
+  border-color: var(--accent);
+  color: var(--text-heading);
+  background: rgba(224, 184, 107, 0.14);
+}
+
+#bench-view { margin-bottom: 2.5rem; }
+
+.bench-scope-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 600;
+  font-size: clamp(1.2rem, 2vw, 1.55rem);
+  color: var(--text-heading);
+  margin-bottom: 0.5rem;
+}
+.bench-scope-title code {
+  font-size: 0.95em;
+  color: var(--accent);
+  background: rgba(224, 184, 107, 0.06);
+  padding: 0.05rem 0.35rem;
+  border-radius: 3px;
+  border: 1px solid rgba(224, 184, 107, 0.25);
+}
+
+.bench-table-wrap { overflow-x: auto; margin-bottom: 1.25rem; }
+
+table.bench.overall-bench tbody th[scope="rowgroup"] {
+  text-align: left;
+  vertical-align: middle;
+  color: var(--text-heading);
+  font-family: ui-monospace, 'SF Mono', monospace;
+  font-style: normal;
+  font-size: 0.9rem;
+}
+tr.overall-row-tr { background: rgba(224, 184, 107, 0.06); }
+
+.per-metric-head {
+  margin-top: 1.5rem;
+  margin-bottom: 0.4rem;
+}
+
+.bench-gallery-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 600;
+  font-size: clamp(1.15rem, 1.9vw, 1.45rem);
+  color: var(--text-heading);
+  margin: 1.75rem 0 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.bench-gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+.bench-card .card-header { gap: 0.6rem; }
+.bench-card .rank {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-style: italic;
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 0.95rem;
+  min-width: 2rem;
+}
+.bench-card .delta {
+  margin-left: auto;
+  font-variant-numeric: tabular-nums;
+  font-size: 0.8rem;
+  letter-spacing: 0.03em;
+  padding: 0.08rem 0.5rem;
+  border-radius: 3px;
+  border: 1px solid var(--border-strong);
+}
+.bench-card .delta.delta-pos { color: #9fd6a6; border-color: rgba(159, 214, 166, 0.4); background: rgba(159, 214, 166, 0.08); }
+.bench-card .delta.delta-neg { color: #e39a9a; border-color: rgba(227, 154, 154, 0.4); background: rgba(227, 154, 154, 0.08); }
+
+.bench-card .card-scores {
+  padding: 0 1rem 0.7rem;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  align-items: center;
+}
+.chip-score em {
+  font-style: normal;
+  color: var(--text-heading);
+  font-variant-numeric: tabular-nums;
+}
+.chip-score span {
+  font-variant-numeric: tabular-nums;
+}
+.chip-legend {
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  margin-left: auto;
+}
+
+td.delta-pos { color: #9fd6a6; }
+td.delta-neg { color: #e39a9a; }
+
+.empty-msg { text-align: center; color: var(--text-secondary); padding: 3rem; }
+
+@media (min-width: 1000px) {
+  .bench-gallery { grid-template-columns: 1fr 1fr; }
+}
+

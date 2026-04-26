@@ -19,13 +19,23 @@ const TAG_LABEL = {
 /* bench tabs route through data-ds; "overall" is a synthetic scope. */
 const BENCH_TAGS   = ["das_p2", "wan22_5b"];
 
+/* CLIP-T intentionally omitted — text-alignment prompt-similarity is
+   confounded by the noobj suffix and not informative for our motion
+   comparison. */
 const METRICS = [
-  { key: "clip_t",              label: "CLIP-T",       dir: "up",   fmt: x => x.toFixed(4) },
-  { key: "tem_con",             label: "Tem-Con",      dir: "up",   fmt: x => x.toFixed(4) },
-  { key: "subject_consistency", label: "Subject-Cons.",dir: "up",   fmt: x => x.toFixed(4) },
-  { key: "fvd",                 label: "FVD",          dir: "down", fmt: x => x.toFixed(1) },
+  { key: "tem_con",             label: "Tem-Con",      dir: "up",   fmt: x => x.toFixed(3), errFmt: x => x.toFixed(3) },
+  { key: "subject_consistency", label: "Subject-Cons.",dir: "up",   fmt: x => x.toFixed(3), errFmt: x => x.toFixed(3) },
+  { key: "fvd",                 label: "FVD",          dir: "down", fmt: x => x.toFixed(1), errFmt: x => x.toFixed(1) },
 ];
 const PER_CLIP_METRICS = METRICS.filter(m => m.key !== "fvd");
+
+function fmtCell(s, m) {
+  const v = s[m.key];
+  if (v == null) return "–";
+  const err = s[`${m.key}_stderr`];
+  if (err == null) return m.fmt(v);
+  return `${m.fmt(v)} <span class="stderr">± ${m.errFmt(err)}</span>`;
+}
 
 let BENCH       = null; // bench_manifest.json (orig 730-bench)
 let BENCH_NOOBJ = null; // bench_noobj_manifest.json (6-ds, "no new objects" prompt suffix)
@@ -156,15 +166,14 @@ function renderBenchSummary(scope, bench) {
     });
     const header = `<thead><tr><th>model</th>${
       METRICS.map(m => `<th>${m.label} ${m.dir === "up" ? "↑" : "↓"}</th>`).join("")
-    }<th>n</th></tr></thead>`;
+    }</tr></thead>`;
     const body = BENCH_TAGS.map(tag => {
       const s = sum[tag];
       const cells = METRICS.map(m => {
-        const v = s[m.key];
         const wins = winners[m.key] === tag;
-        return `<td${wins ? ` class="win"` : ""}>${v == null ? "–" : m.fmt(v)}</td>`;
+        return `<td${wins ? ` class="win"` : ""}>${fmtCell(s, m)}</td>`;
       }).join("");
-      return `<tr><th scope="row">${escapeHTML(TAG_LABEL[tag])}</th>${cells}<td>${s.n_clips}</td></tr>`;
+      return `<tr><th scope="row">${escapeHTML(TAG_LABEL[tag])}</th>${cells}</tr>`;
     }).join("");
     const variantBlurb = STATE.view === "bench_noobj"
       ? ` Prompts have <code>". no new objects, people, or artifacts should be added to the scene"</code> appended to suppress object hallucination.`
@@ -173,23 +182,26 @@ function renderBenchSummary(scope, bench) {
       <div class="section-eyebrow">${STATE.view === "bench_noobj" ? "Noobj prompt benchmark" : "Dataset benchmark"} · ${escapeHTML(scope)}</div>
       <h2 class="bench-scope-title">DaS vs Wan 2.2-TI2V-5B on <code>${escapeHTML(scope)}</code> (n=${sum.das_p2.n_clips})</h2>
       <p class="section-blurb">
-        Per-clip CLIP-T / Tem-Con / Subject-Consistency are means over the
-        clip intersection. FVD is set-level (I3D via cd-fvd), computed between
-        generated clips and the corresponding GT source mp4s.${variantBlurb}
+        Per-clip Tem-Con / Subject-Consistency reported as mean ± stderr over
+        the clip intersection. FVD is set-level (I3D via cd-fvd), computed
+        between generated clips and the corresponding GT source mp4s.${variantBlurb}
       </p>
       <div class="bench-table-wrap"><table class="bench">${header}<tbody>${body}</tbody></table></div>
     `;
   } else {
-    // overall: per-dataset rows per tag + overall mean
+    // overall: ONE flat table -- per-dataset rows + a pooled "all" row per
+    // model. No rowspan grouping. Per-clip metrics shown as mean ± stderr;
+    // FVD is per-dataset (distribution-level) and the "all" row averages the
+    // per-dataset FVDs (± stderr across datasets).
     const per = bench.per_dataset_summary;
     const scopes = bench.scopes.filter(s => s !== "overall");
     const rows = [];
-    rows.push(`<thead><tr><th>scope</th><th>model</th>${
+    rows.push(`<thead><tr><th>dataset</th><th>model</th>${
       METRICS.map(m => `<th>${m.label} ${m.dir === "up" ? "↑" : "↓"}</th>`).join("")
-    }<th>n</th></tr></thead>`);
+    }</tr></thead>`);
     const body = [];
     for (const ds of scopes) {
-      // winners within this ds
+      // Per-dataset winners (highlight the better of the two cells per metric)
       const dsWinners = {};
       METRICS.forEach(m => {
         let best = null, bestTag = null;
@@ -201,46 +213,35 @@ function renderBenchSummary(scope, bench) {
         });
         dsWinners[m.key] = bestTag;
       });
-      BENCH_TAGS.forEach((tag, i) => {
+      BENCH_TAGS.forEach(tag => {
         const s = per[ds][tag];
         const cells = METRICS.map(m => {
-          const v = s[m.key];
           const wins = dsWinners[m.key] === tag;
-          return `<td${wins ? ` class="win"` : ""}>${v == null ? "–" : m.fmt(v)}</td>`;
+          return `<td${wins ? ` class="win"` : ""}>${fmtCell(s, m)}</td>`;
         }).join("");
-        const first = i === 0
-          ? `<th scope="rowgroup" rowspan="2"><code>${escapeHTML(ds)}</code></th>`
-          : "";
-        body.push(`<tr>${first}<td>${escapeHTML(TAG_LABEL[tag])}</td>${cells}<td>${s.n_clips}</td></tr>`);
+        body.push(`<tr><td><code>${escapeHTML(ds)}</code></td><td>${escapeHTML(TAG_LABEL[tag])}</td>${cells}</tr>`);
       });
     }
-    // Overall mean row pair (FVD rendered as min–max across datasets)
+    // Pooled "all" rows
     const ov = bench.overall_summary;
     const ovWinners = {};
-    PER_CLIP_METRICS.forEach(m => {
+    METRICS.forEach(m => {
       let best = null, bestTag = null;
       BENCH_TAGS.forEach(t => {
         const v = ov[t][m.key];
+        if (v == null) return;
         const better = best === null ? true : (m.dir === "up" ? v > best : v < best);
         if (better) { best = v; bestTag = t; }
       });
       ovWinners[m.key] = bestTag;
     });
-    BENCH_TAGS.forEach((tag, i) => {
+    BENCH_TAGS.forEach(tag => {
       const s = ov[tag];
-      const perClipCells = PER_CLIP_METRICS.map(m => {
-        const v = s[m.key];
+      const cells = METRICS.map(m => {
         const wins = ovWinners[m.key] === tag;
-        return `<td${wins ? ` class="win"` : ""}>${v == null ? "–" : m.fmt(v)}</td>`;
+        return `<td${wins ? ` class="win"` : ""}>${fmtCell(s, m)}</td>`;
       }).join("");
-      const fvds = Object.values(s.fvd_per_dataset || {});
-      const fvdCell = fvds.length
-        ? `<td>${Math.min(...fvds).toFixed(0)}–${Math.max(...fvds).toFixed(0)}</td>`
-        : `<td>–</td>`;
-      const first = i === 0
-        ? `<th scope="rowgroup" rowspan="2" class="overall-row"><em>all</em></th>`
-        : "";
-      body.push(`<tr class="overall-row-tr">${first}<td>${escapeHTML(TAG_LABEL[tag])}</td>${perClipCells}${fvdCell}<td>${s.n_clips}</td></tr>`);
+      body.push(`<tr class="overall-row-tr"><td><strong>all</strong></td><td>${escapeHTML(TAG_LABEL[tag])}</td>${cells}</tr>`);
     });
 
     const variant = STATE.view === "bench_noobj" ? "noobj prompt suffix · " : "";
@@ -249,11 +250,14 @@ function renderBenchSummary(scope, bench) {
       : "";
     $("#bench-summary").innerHTML = `
       <div class="section-eyebrow">${variant}Overall benchmark — ${scopes.length} datasets</div>
-      <h2 class="bench-scope-title">DaS vs Wan 2.2-TI2V-5B — pooled ${ov.das_p2.n_clips} clips</h2>
+      <h2 class="bench-scope-title">DaS vs Wan 2.2-TI2V-5B</h2>
       <p class="section-blurb">
-        Per-dataset metric means plus a pooled <em>all</em> row. FVD is
-        per-dataset (distribution distance) — the <em>all</em> row reports the
-        min–max FVD range across the ${scopes.length} datasets rather than a meaningless pool.${variantBlurb}
+        Per-dataset rows for each model, plus a pooled <em>all</em> row at the
+        bottom. Per-clip Tem-Con / Subject-Consistency are mean ± stderr; the
+        <em>all</em> row pools per-clip values across the ${scopes.length}
+        datasets. FVD is set-level per dataset (I3D via cd-fvd) — the
+        <em>all</em> row averages the ${scopes.length} per-dataset FVDs
+        (± stderr across datasets).${variantBlurb}
       </p>
       <div class="bench-table-wrap"><table class="bench overall-bench">${rows.join("")}<tbody>${body.join("")}</tbody></table></div>
     `;

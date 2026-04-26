@@ -184,6 +184,12 @@ table.bench td.win::after {
   font-size: 0.7em;
   vertical-align: 0.3em;
 }
+table.bench td .stderr {
+  color: var(--muted, #888);
+  font-size: 0.85em;
+  margin-left: 0.15em;
+  font-weight: 400;
+}
 
 details.per-clip-details {
   margin-top: 1.25rem;

@@ -3445,7 +3445,7 @@
       "vid": "clip-003214_obj3_s000_e092",
       "prompt": "turn the red spatula over. no new objects, people, or artifacts should be added to the scene",
       "rank": 1,
-      "triptych": "videos/bench_noobj/overall/hot3d__clip-003214_obj3_s000_e092.mp4",
+      "triptych": "videos/bench_noobj/hot3d/clip-003214_obj3_s000_e092.mp4",
       "delta": 2.367459050599373,
       "das": {
         "clip_t": 0.19983556866645813,
@@ -3464,7 +3464,7 @@
       "vid": "part5_stack_4910",
       "prompt": "put white cube into brown box. no new objects, people, or artifacts should be added to the scene",
       "rank": 2,
-      "triptych": "videos/bench_noobj/overall/egodex__part5_stack_4910.mp4",
+      "triptych": "videos/bench_noobj/egodex/part5_stack_4910.mp4",
       "delta": 2.0411663868761827,
       "das": {
         "clip_t": 0.20962922275066376,
@@ -3483,7 +3483,7 @@
       "vid": "P09-20240621-153208-287",
       "prompt": "remove ginger and hibiscus bits from the saucepan with the slotted spoon. no new objects, people, or artifacts should be added to the scene",
       "rank": 3,
-      "triptych": "videos/bench_noobj/overall/hdepic__P09-20240621-153208-287.mp4",
+      "triptych": "videos/bench_noobj/hdepic/P09-20240621-153208-287.mp4",
       "delta": 2.0401335512449466,
       "das": {
         "clip_t": 0.18704526126384735,
@@ -3502,7 +3502,7 @@
       "vid": "part2_assemble_disassemble_furniture_bench_drawer_6350",
       "prompt": "open white plastic drawer. no new objects, people, or artifacts should be added to the scene",
       "rank": 4,
-      "triptych": "videos/bench_noobj/overall/egodex__part2_assemble_disassemble_furniture_bench_drawer_6350.mp4",
+      "triptych": "videos/bench_noobj/egodex/part2_assemble_disassemble_furniture_bench_drawer_6350.mp4",
       "delta": 1.9796829033121472,
       "das": {
         "clip_t": 0.1637706309556961,
@@ -3521,7 +3521,7 @@
       "vid": "part2_insert_remove_furniture_bench_round_table_4786",
       "prompt": "insert white plastic object into white circular object. no new objects, people, or artifacts should be added to the scene",
       "rank": 5,
-      "triptych": "videos/bench_noobj/overall/egodex__part2_insert_remove_furniture_bench_round_table_4786.mp4",
+      "triptych": "videos/bench_noobj/egodex/part2_insert_remove_furniture_bench_round_table_4786.mp4",
       "delta": 1.9578771070498635,
       "das": {
         "clip_t": 0.2333250343799591,
@@ -3540,7 +3540,7 @@
       "vid": "clip-002432_obj3_s134_e149",
       "prompt": "pick up the wooden spoon from the table. no new objects, people, or artifacts should be added to the scene",
       "rank": 6,
-      "triptych": "videos/bench_noobj/overall/hot3d__clip-002432_obj3_s134_e149.mp4",
+      "triptych": "videos/bench_noobj/hot3d/clip-002432_obj3_s134_e149.mp4",
       "delta": 1.8583437841604455,
       "das": {
         "clip_t": 0.2366938292980194,
@@ -3559,7 +3559,7 @@
       "vid": "part2_assemble_disassemble_furniture_bench_drawer_1986",
       "prompt": "close white plastic box. no new objects, people, or artifacts should be added to the scene",
       "rank": 7,
-      "triptych": "videos/bench_noobj/overall/egodex__part2_assemble_disassemble_furniture_bench_drawer_1986.mp4",
+      "triptych": "videos/bench_noobj/egodex/part2_assemble_disassemble_furniture_bench_drawer_1986.mp4",
       "delta": 1.848150165862164,
       "das": {
         "clip_t": 0.21668702363967896,
@@ -3578,7 +3578,7 @@
       "vid": "part5_stack_5746",
       "prompt": "put red dice into brown box. no new objects, people, or artifacts should be added to the scene",
       "rank": 8,
-      "triptych": "videos/bench_noobj/overall/egodex__part5_stack_5746.mp4",
+      "triptych": "videos/bench_noobj/egodex/part5_stack_5746.mp4",
       "delta": 1.8293682778168054,
       "das": {
         "clip_t": 0.19865456223487854,
@@ -3597,7 +3597,7 @@
       "vid": "clip-002559_obj1_s062_e107",
       "prompt": "pick up the white ceramic mug from the table. no new objects, people, or artifacts should be added to the scene",
       "rank": 9,
-      "triptych": "videos/bench_noobj/overall/hot3d__clip-002559_obj1_s062_e107.mp4",
+      "triptych": "videos/bench_noobj/hot3d/clip-002559_obj1_s062_e107.mp4",
       "delta": 1.8068716214305915,
       "das": {
         "clip_t": 0.22106432914733887,
@@ -3616,7 +3616,7 @@
       "vid": "clip-002219_obj1_s122_e148",
       "prompt": "move the round light brown plate on the table. no new objects, people, or artifacts should be added to the scene",
       "rank": 10,
-      "triptych": "videos/bench_noobj/overall/hot3d__clip-002219_obj1_s122_e148.mp4",
+      "triptych": "videos/bench_noobj/hot3d/clip-002219_obj1_s122_e148.mp4",
       "delta": 1.8004305270939613,
       "das": {
         "clip_t": 0.24029380083084106,
@@ -3635,7 +3635,7 @@
       "vid": "part2_basic_pick_place_10441",
       "prompt": "put yellow toy on plate. no new objects, people, or artifacts should be added to the scene",
       "rank": 11,
-      "triptych": "videos/bench_noobj/overall/egodex__part2_basic_pick_place_10441.mp4",
+      "triptych": "videos/bench_noobj/egodex/part2_basic_pick_place_10441.mp4",
       "delta": 1.758026452301456,
       "das": {
         "clip_t": 0.22435754537582397,
@@ -3654,7 +3654,7 @@
       "vid": "P06-20240510-094438-14",
       "prompt": "press the corners of the pancake with the spatula in the right hand. no new objects, people, or artifacts should be added to the scene",
       "rank": 12,
-      "triptych": "videos/bench_noobj/overall/hdepic__P06-20240510-094438-14.mp4",
+      "triptych": "videos/bench_noobj/hdepic/P06-20240510-094438-14.mp4",
       "delta": 1.7010698628795855,
       "das": {
         "clip_t": 0.2348059117794037,
@@ -3673,7 +3673,7 @@
       "vid": "clip-002516_obj0_s032_e075",
       "prompt": "take the black kitchen tool from the table. no new objects, people, or artifacts should be added to the scene",
       "rank": 13,
-      "triptych": "videos/bench_noobj/overall/hot3d__clip-002516_obj0_s032_e075.mp4",
+      "triptych": "videos/bench_noobj/hot3d/clip-002516_obj0_s032_e075.mp4",
       "delta": 1.6936549863008323,
       "das": {
         "clip_t": 0.20514750480651855,
@@ -3692,7 +3692,7 @@
       "vid": "part5_stack_4935",
       "prompt": "put white and black toy on bed. no new objects, people, or artifacts should be added to the scene",
       "rank": 14,
-      "triptych": "videos/bench_noobj/overall/egodex__part5_stack_4935.mp4",
+      "triptych": "videos/bench_noobj/egodex/part5_stack_4935.mp4",
       "delta": 1.6881903864295926,
       "das": {
         "clip_t": 0.1950603574514389,
@@ -3711,7 +3711,7 @@
       "vid": "part2_assemble_disassemble_furniture_bench_drawer_6321",
       "prompt": "insert white plastic drawer into white plastic box. no new objects, people, or artifacts should be added to the scene",
       "rank": 15,
-      "triptych": "videos/bench_noobj/overall/egodex__part2_assemble_disassemble_furniture_bench_drawer_6321.mp4",
+      "triptych": "videos/bench_noobj/egodex/part2_assemble_disassemble_furniture_bench_drawer_6321.mp4",
       "delta": 1.6567310088668947,
       "das": {
         "clip_t": 0.20633000135421753,
@@ -3730,7 +3730,7 @@
       "vid": "clip-002659_obj1_s104_e149",
       "prompt": "mash the orange tomato with the silver potato masher in the brown bowl. no new objects, people, or artifacts should be added to the scene",
       "rank": 16,
-      "triptych": "videos/bench_noobj/overall/hot3d__clip-002659_obj1_s104_e149.mp4",
+      "triptych": "videos/bench_noobj/hot3d/clip-002659_obj1_s104_e149.mp4",
       "delta": 1.6335374242023062,
       "das": {
         "clip_t": 0.25919803977012634,
@@ -3749,7 +3749,7 @@
       "vid": "clip-001864_obj1_s047_e089",
       "prompt": "put down the black eyeglasses on the table. no new objects, people, or artifacts should be added to the scene",
       "rank": 17,
-      "triptych": "videos/bench_noobj/overall/hot3d__clip-001864_obj1_s047_e089.mp4",
+      "triptych": "videos/bench_noobj/hot3d/clip-001864_obj1_s047_e089.mp4",
       "delta": 1.600224578372555,
       "das": {
         "clip_t": 0.24118798971176147,
@@ -3768,7 +3768,7 @@
       "vid": "P01-20240203-184214-157",
       "prompt": "open the package with the scissors. no new objects, people, or artifacts should be added to the scene",
       "rank": 18,
-      "triptych": "videos/bench_noobj/overall/hdepic__P01-20240203-184214-157.mp4",
+      "triptych": "videos/bench_noobj/hdepic/P01-20240203-184214-157.mp4",
       "delta": 1.5854017649559704,
       "das": {
         "clip_t": 0.19852909445762634,
@@ -3787,7 +3787,7 @@
       "vid": "clip-002197_obj0_s079_e096",
       "prompt": "take the white ceramic mug from the table. no new objects, people, or artifacts should be added to the scene",
       "rank": 19,
-      "triptych": "videos/bench_noobj/overall/hot3d__clip-002197_obj0_s079_e096.mp4",
+      "triptych": "videos/bench_noobj/hot3d/clip-002197_obj0_s079_e096.mp4",
       "delta": 1.5843703445334136,
       "das": {
         "clip_t": 0.23588813841342926,
@@ -3806,7 +3806,7 @@
       "vid": "P04-20240414-162242-53",
       "prompt": "examine the bag of potatoes with both hands. no new objects, people, or artifacts should be added to the scene",
       "rank": 20,
-      "triptych": "videos/bench_noobj/overall/hdepic__P04-20240414-162242-53.mp4",
+      "triptych": "videos/bench_noobj/hdepic/P04-20240414-162242-53.mp4",
       "delta": 1.5753246921930226,
       "das": {
         "clip_t": 0.22219988703727722,
@@ -3825,7 +3825,7 @@
       "vid": "clip-002259_obj0_s050_e070",
       "prompt": "pick up the white cup from the table. no new objects, people, or artifacts should be added to the scene",
       "rank": 21,
-      "triptych": "videos/bench_noobj/overall/hot3d__clip-002259_obj0_s050_e070.mp4",
+      "triptych": "videos/bench_noobj/hot3d/clip-002259_obj0_s050_e070.mp4",
       "delta": 1.5683256282476725,
       "das": {
         "clip_t": 0.23247180879116058,
@@ -3844,7 +3844,7 @@
       "vid": "P03-20240218-101509-31",
       "prompt": "pull the top dishwasher rack. no new objects, people, or artifacts should be added to the scene",
       "rank": 22,
-      "triptych": "videos/bench_noobj/overall/hdepic__P03-20240218-101509-31.mp4",
+      "triptych": "videos/bench_noobj/hdepic/P03-20240218-101509-31.mp4",
       "delta": 1.550464309069355,
       "das": {
         "clip_t": 0.21453791856765747,
@@ -3863,7 +3863,7 @@
       "vid": "part4_scoop_dump_ice_776",
       "prompt": "dip yellow sponge into water. no new objects, people, or artifacts should be added to the scene",
       "rank": 23,
-      "triptych": "videos/bench_noobj/overall/egodex__part4_scoop_dump_ice_776.mp4",
+      "triptych": "videos/bench_noobj/egodex/part4_scoop_dump_ice_776.mp4",
       "delta": 1.524772519606638,
       "das": {
         "clip_t": 0.2150833010673523,
@@ -3882,7 +3882,7 @@
       "vid": "part1_boil_serve_egg_407",
       "prompt": "turn on the tap. no new objects, people, or artifacts should be added to the scene",
       "rank": 24,
-      "triptych": "videos/bench_noobj/overall/egodex__part1_boil_serve_egg_407.mp4",
+      "triptych": "videos/bench_noobj/egodex/part1_boil_serve_egg_407.mp4",
       "delta": 1.5143315702786566,
       "das": {
         "clip_t": 0.19774851202964783,
@@ -3901,7 +3901,7 @@
       "vid": "P02-20240211-175138-581",
       "prompt": "chuck away the kitchen roll with the right hand. no new objects, people, or artifacts should be added to the scene",
       "rank": 25,
-      "triptych": "videos/bench_noobj/overall/hdepic__P02-20240211-175138-581.mp4",
+      "triptych": "videos/bench_noobj/hdepic/P02-20240211-175138-581.mp4",
       "delta": 1.5059205990521056,
       "das": {
         "clip_t": 0.20203593373298645,
@@ -3920,7 +3920,7 @@
       "vid": "P04-20240414-170520-154",
       "prompt": "grab the large plate containing the cooked potatoes with the right hand. no new objects, people, or artifacts should be added to the scene",
       "rank": 26,
-      "triptych": "videos/bench_noobj/overall/hdepic__P04-20240414-170520-154.mp4",
+      "triptych": "videos/bench_noobj/hdepic/P04-20240414-170520-154.mp4",
       "delta": 1.5049124374864058,
       "das": {
         "clip_t": 0.2159447818994522,
@@ -3939,7 +3939,7 @@
       "vid": "P04-20240413-142619-28",
       "prompt": "pick up the plastic chopping board with the right hand. no new objects, people, or artifacts should be added to the scene",
       "rank": 27,
-      "triptych": "videos/bench_noobj/overall/hdepic__P04-20240413-142619-28.mp4",
+      "triptych": "videos/bench_noobj/hdepic/P04-20240413-142619-28.mp4",
       "delta": 1.5036356400729172,
       "das": {
         "clip_t": 0.18405210971832275,
@@ -3958,7 +3958,7 @@
       "vid": "clip-001922_obj2_s027_e077",
       "prompt": "take the milk carton from the table. no new objects, people, or artifacts should be added to the scene",
       "rank": 28,
-      "triptych": "videos/bench_noobj/overall/hot3d__clip-001922_obj2_s027_e077.mp4",
+      "triptych": "videos/bench_noobj/hot3d/clip-001922_obj2_s027_e077.mp4",
       "delta": 1.4915208527054689,
       "das": {
         "clip_t": 0.22564801573753357,
@@ -3977,7 +3977,7 @@
       "vid": "part5_stack_4298",
       "prompt": "put wooden block into box. no new objects, people, or artifacts should be added to the scene",
       "rank": 29,
-      "triptych": "videos/bench_noobj/overall/egodex__part5_stack_4298.mp4",
+      "triptych": "videos/bench_noobj/egodex/part5_stack_4298.mp4",
       "delta": 1.489887109313882,
       "das": {
         "clip_t": 0.1994129717350006,
@@ -3996,7 +3996,7 @@
       "vid": "part2_basic_pick_place_23234",
       "prompt": "put green block into yellow bowl. no new objects, people, or artifacts should be added to the scene",
       "rank": 30,
-      "triptych": "videos/bench_noobj/overall/egodex__part2_basic_pick_place_23234.mp4",
+      "triptych": "videos/bench_noobj/egodex/part2_basic_pick_place_23234.mp4",
       "delta": 1.489312568718408,
       "das": {
         "clip_t": 0.22492438554763794,

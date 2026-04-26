@@ -22,7 +22,8 @@
       Diffusion-as-Shader (CogVideoX-5b-I2V base + rainbow 3D-track conditioning) fed our
       <em>_GenTraj</em> pipeline's tracks as the motion signal and a short caption as the content signal.
       The <strong>bench tabs</strong> compare DaS against Wan 2.2-TI2V-5B on 730 clips across five datasets;
-      the <strong>qualitative tabs</strong> are the 451 track-conditioned triptychs with no comparison.
+      the <strong>noobj-bench tabs</strong> rerun the same comparison plus HOT3D-Aria with a "no new objects"
+      prompt suffix; the <strong>qualitative tabs</strong> are the 451 track-conditioned triptychs.
     </p>
   </div>
 </header>
@@ -38,6 +39,16 @@
     <button class="tag-btn bench-hdepic"          data-view="bench" data-ds="hdepic">hd-epic</button>
     <button class="tag-btn bench-stereo4d"        data-view="bench" data-ds="stereo4d">stereo4d</button>
     <button class="tag-btn bench-overall"         data-view="bench" data-ds="overall">overall</button>
+  </div>
+  <div class="tag-row" id="tag-row-bench-noobj">
+    <span class="group-label">noobj-bench</span>
+    <button class="tag-btn bench-davis"    data-view="bench_noobj" data-ds="davis">davis</button>
+    <button class="tag-btn bench-egodex"   data-view="bench_noobj" data-ds="egodex">egodex</button>
+    <button class="tag-btn bench-ytvis"    data-view="bench_noobj" data-ds="yt-vis">yt-vis</button>
+    <button class="tag-btn bench-hdepic"   data-view="bench_noobj" data-ds="hdepic">hd-epic</button>
+    <button class="tag-btn bench-stereo4d" data-view="bench_noobj" data-ds="stereo4d">stereo4d</button>
+    <button class="tag-btn bench-hot3d"    data-view="bench_noobj" data-ds="hot3d">hot3d-aria</button>
+    <button class="tag-btn bench-overall"  data-view="bench_noobj" data-ds="overall">overall</button>
   </div>
   <div class="tag-row" id="tag-row-qual">
     <span class="group-label">qualitative</span>

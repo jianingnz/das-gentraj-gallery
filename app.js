@@ -8,7 +8,8 @@
 const DS_KEYS = ["egodex", "hdepic", "stereo4d", "yt-vis", "davis", "experiment"];
 const DS_CSS   = { "yt-vis": "ytvis" };
 const DS_LABEL = { egodex: "egodex", hdepic: "hd-epic", stereo4d: "stereo4d",
-                   "yt-vis": "yt-vis", davis: "davis", experiment: "experiment" };
+                   "yt-vis": "yt-vis", davis: "davis", hot3d: "hot3d-aria",
+                   experiment: "experiment" };
 
 const TAG_LABEL = {
   das_p2:   "DaS (ours)",
@@ -16,7 +17,6 @@ const TAG_LABEL = {
 };
 
 /* bench tabs route through data-ds; "overall" is a synthetic scope. */
-const BENCH_SCOPES = ["davis", "egodex", "yt-vis", "hdepic", "stereo4d", "overall"];
 const BENCH_TAGS   = ["das_p2", "wan22_5b"];
 
 const METRICS = [
@@ -27,11 +27,13 @@ const METRICS = [
 ];
 const PER_CLIP_METRICS = METRICS.filter(m => m.key !== "fvd");
 
-let BENCH = null;      // bench_manifest.json
-let QUAL  = null;      // legacy manifest.json
+let BENCH       = null; // bench_manifest.json (orig 730-bench)
+let BENCH_NOOBJ = null; // bench_noobj_manifest.json (6-ds, "no new objects" prompt suffix)
+let QUAL        = null; // legacy manifest.json
 let STATE = {
-  view: "bench",       // "bench" | "qual"
+  view: "bench",        // "bench" | "bench_noobj" | "qual"
   benchScope: "davis",
+  noobjScope: "davis",
   qualDataset: "all",
   query: "",
 };
@@ -39,15 +41,33 @@ let STATE = {
 const $ = s => document.querySelector(s);
 
 async function boot() {
-  const [benchRes, qualRes] = await Promise.all([
+  const [benchRes, qualRes, noobjRes] = await Promise.all([
     fetch("bench_manifest.json"),
     fetch("manifest.json"),
+    fetch("bench_noobj_manifest.json").catch(() => null),
   ]);
   BENCH = await benchRes.json();
   QUAL  = await qualRes.json();
+  if (noobjRes && noobjRes.ok) {
+    BENCH_NOOBJ = await noobjRes.json();
+  } else {
+    // Hide the noobj tab row entirely if the manifest isn't available yet.
+    const row = document.getElementById("tag-row-bench-noobj");
+    if (row) row.style.display = "none";
+  }
   initTheme();
   initControls();
   render();
+}
+
+/* Which manifest a "bench-style" view should use. */
+function manifestForView(view) {
+  if (view === "bench_noobj") return BENCH_NOOBJ;
+  return BENCH;
+}
+function scopeForView(view) {
+  if (view === "bench_noobj") return STATE.noobjScope;
+  return STATE.benchScope;
 }
 
 function initTheme() {
@@ -69,8 +89,9 @@ function initControls() {
       const view = btn.dataset.view;
       const ds   = btn.dataset.ds;
       STATE.view = view;
-      if (view === "bench") STATE.benchScope  = ds;
-      else                  STATE.qualDataset = ds;
+      if      (view === "bench")        STATE.benchScope   = ds;
+      else if (view === "bench_noobj")  STATE.noobjScope   = ds;
+      else                              STATE.qualDataset  = ds;
       render();
     });
   });
@@ -83,10 +104,10 @@ function initControls() {
 
 /* ---------------- render ---------------- */
 function render() {
-  if (STATE.view === "bench") {
+  if (STATE.view === "bench" || STATE.view === "bench_noobj") {
     $("#bench-view").style.display = "";
     $("#gallery").style.display    = "none";
-    renderBench(STATE.benchScope);
+    renderBench(scopeForView(STATE.view), manifestForView(STATE.view));
   } else {
     $("#bench-view").style.display = "none";
     $("#gallery").style.display    = "";
@@ -96,30 +117,31 @@ function render() {
 
 /* ============== BENCH VIEW ============== */
 
-function summaryForScope(scope) {
-  if (scope === "overall") return BENCH.overall_summary;
-  return BENCH.per_dataset_summary[scope];
+function summaryForScope(bench, scope) {
+  if (scope === "overall") return bench.overall_summary;
+  return bench.per_dataset_summary[scope];
 }
 
-function renderBench(scope) {
-  renderBenchSummary(scope);
-  renderPerMetricLeaderboards(scope);
-  renderBenchGallery(scope);
-  $("#counts").textContent = benchCountsLine(scope);
+function renderBench(scope, bench) {
+  renderBenchSummary(scope, bench);
+  renderPerMetricLeaderboards(scope, bench);
+  renderBenchGallery(scope, bench);
+  $("#counts").textContent = benchCountsLine(scope, bench);
 }
 
-function benchCountsLine(scope) {
-  const summary = summaryForScope(scope);
+function benchCountsLine(scope, bench) {
+  const summary = summaryForScope(bench, scope);
   const n = summary.das_p2.n_clips;
+  const tag = STATE.view === "bench_noobj" ? "noobj · " : "";
   if (scope === "overall") {
-    return `overall · ${n} clips across ${BENCH.scopes.length - 1} datasets · showing top-30 by Δ (DaS − Wan)`;
+    return `${tag}overall · ${n} clips across ${bench.scopes.length - 1} datasets · showing top-30 by Δ (DaS − Wan)`;
   }
-  return `${scope} · ${n} clips · showing top-30 by Δ (DaS − Wan)`;
+  return `${tag}${scope} · ${n} clips · showing top-30 by Δ (DaS − Wan)`;
 }
 
-function renderBenchSummary(scope) {
+function renderBenchSummary(scope, bench) {
   if (scope !== "overall") {
-    const sum = summaryForScope(scope);
+    const sum = summaryForScope(bench, scope);
     // Winners
     const winners = {};
     METRICS.forEach(m => {
@@ -144,25 +166,29 @@ function renderBenchSummary(scope) {
       }).join("");
       return `<tr><th scope="row">${escapeHTML(TAG_LABEL[tag])}</th>${cells}<td>${s.n_clips}</td></tr>`;
     }).join("");
+    const variantBlurb = STATE.view === "bench_noobj"
+      ? ` Prompts have <code>". no new objects, people, or artifacts should be added to the scene"</code> appended to suppress object hallucination.`
+      : "";
     $("#bench-summary").innerHTML = `
-      <div class="section-eyebrow">Dataset benchmark · ${escapeHTML(scope)}</div>
+      <div class="section-eyebrow">${STATE.view === "bench_noobj" ? "Noobj prompt benchmark" : "Dataset benchmark"} · ${escapeHTML(scope)}</div>
       <h2 class="bench-scope-title">DaS vs Wan 2.2-TI2V-5B on <code>${escapeHTML(scope)}</code> (n=${sum.das_p2.n_clips})</h2>
       <p class="section-blurb">
         Per-clip CLIP-T / Tem-Con / Subject-Consistency are means over the
         clip intersection. FVD is set-level (I3D via cd-fvd), computed between
-        generated clips and the corresponding GT source mp4s.
+        generated clips and the corresponding GT source mp4s.${variantBlurb}
       </p>
       <div class="bench-table-wrap"><table class="bench">${header}<tbody>${body}</tbody></table></div>
     `;
   } else {
     // overall: per-dataset rows per tag + overall mean
-    const per = BENCH.per_dataset_summary;
+    const per = bench.per_dataset_summary;
+    const scopes = bench.scopes.filter(s => s !== "overall");
     const rows = [];
     rows.push(`<thead><tr><th>scope</th><th>model</th>${
       METRICS.map(m => `<th>${m.label} ${m.dir === "up" ? "↑" : "↓"}</th>`).join("")
     }<th>n</th></tr></thead>`);
     const body = [];
-    for (const ds of BENCH_SCOPES.filter(s => s !== "overall")) {
+    for (const ds of scopes) {
       // winners within this ds
       const dsWinners = {};
       METRICS.forEach(m => {
@@ -189,7 +215,7 @@ function renderBenchSummary(scope) {
       });
     }
     // Overall mean row pair (FVD rendered as min–max across datasets)
-    const ov = BENCH.overall_summary;
+    const ov = bench.overall_summary;
     const ovWinners = {};
     PER_CLIP_METRICS.forEach(m => {
       let best = null, bestTag = null;
@@ -217,27 +243,31 @@ function renderBenchSummary(scope) {
       body.push(`<tr class="overall-row-tr">${first}<td>${escapeHTML(TAG_LABEL[tag])}</td>${perClipCells}${fvdCell}<td>${s.n_clips}</td></tr>`);
     });
 
+    const variant = STATE.view === "bench_noobj" ? "noobj prompt suffix · " : "";
+    const variantBlurb = STATE.view === "bench_noobj"
+      ? ` Prompts have <code>". no new objects, people, or artifacts should be added to the scene"</code> appended; HOT3D-Aria adds a 6th dataset.`
+      : "";
     $("#bench-summary").innerHTML = `
-      <div class="section-eyebrow">Overall benchmark — all 5 datasets</div>
-      <h2 class="bench-scope-title">DaS vs Wan 2.2-TI2V-5B — pooled 730 clips</h2>
+      <div class="section-eyebrow">${variant}Overall benchmark — ${scopes.length} datasets</div>
+      <h2 class="bench-scope-title">DaS vs Wan 2.2-TI2V-5B — pooled ${ov.das_p2.n_clips} clips</h2>
       <p class="section-blurb">
         Per-dataset metric means plus a pooled <em>all</em> row. FVD is
         per-dataset (distribution distance) — the <em>all</em> row reports the
-        min–max FVD range across the 5 datasets rather than a meaningless pool.
+        min–max FVD range across the ${scopes.length} datasets rather than a meaningless pool.${variantBlurb}
       </p>
       <div class="bench-table-wrap"><table class="bench overall-bench">${rows.join("")}<tbody>${body.join("")}</tbody></table></div>
     `;
   }
 }
 
-function renderPerMetricLeaderboards(scope) {
+function renderPerMetricLeaderboards(scope, bench) {
   // The per-dataset per-metric "DaS good, Wan bad" leaderboards live only
   // for non-overall scopes. For overall we hide this section.
-  if (scope === "overall" || !BENCH.per_metric_top || !BENCH.per_metric_top[scope]) {
+  if (scope === "overall" || !bench.per_metric_top || !bench.per_metric_top[scope]) {
     $("#bench-per-metric").innerHTML = "";
     return;
   }
-  const top = BENCH.per_metric_top[scope];
+  const top = bench.per_metric_top[scope];
   const blocks = PER_CLIP_METRICS.map(m => {
     const rows = top[m.key].slice(0, 10).map((r, i) => `
       <tr>
@@ -270,8 +300,8 @@ function renderPerMetricLeaderboards(scope) {
   `;
 }
 
-function renderBenchGallery(scope) {
-  const items = (BENCH.items || []).filter(it => it.scope === scope);
+function renderBenchGallery(scope, bench) {
+  const items = (bench.items || []).filter(it => it.scope === scope);
   const q = STATE.query;
   const filtered = q
     ? items.filter(it => (it.prompt || "").toLowerCase().includes(q)
